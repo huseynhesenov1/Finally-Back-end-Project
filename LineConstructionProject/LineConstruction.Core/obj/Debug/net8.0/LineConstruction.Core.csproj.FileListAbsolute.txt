@@ -1,0 +1,11 @@
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\bin\Debug\net8.0\LineConstruction.Core.deps.json
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\bin\Debug\net8.0\LineConstruction.Core.dll
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\bin\Debug\net8.0\LineConstruction.Core.pdb
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\LineConstruction.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\LineConstruction.Core.AssemblyInfoInputs.cache
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\LineConstruction.Core.AssemblyInfo.cs
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\LineConstruction.Core.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\LineConstruction.Core.dll
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\refint\LineConstruction.Core.dll
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\LineConstruction.Core.pdb
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\ref\LineConstruction.Core.dll

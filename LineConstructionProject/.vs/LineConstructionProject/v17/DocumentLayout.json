@@ -1,0 +1,1099 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.bla\\services\\implementations\\ourserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|solutionrelative:lineconstruction.bla\\services\\implementations\\ourserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.bla\\services\\abstractions\\iourserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|solutionrelative:lineconstruction.bla\\services\\abstractions\\iourserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\implementations\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\implementations\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\abstractions\\iwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\abstractions\\iwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\home\\recycle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\home\\recycle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\abstractions\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\abstractions\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\implementations\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\implementations\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\home\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\home\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.bla\\dtos\\ourservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|solutionrelative:lineconstruction.bla\\dtos\\ourservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.bla\\profiles\\ourserviceprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|solutionrelative:lineconstruction.bla\\profiles\\ourserviceprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEFA4332-16B4-4FA7-AA97-2FC69004161D}|LineConstruction.Core\\LineConstruction.Core.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.core\\entities\\ourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEFA4332-16B4-4FA7-AA97-2FC69004161D}|LineConstruction.Core\\LineConstruction.Core.csproj|solutionrelative:lineconstruction.core\\entities\\ourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEFA4332-16B4-4FA7-AA97-2FC69004161D}|LineConstruction.Core\\LineConstruction.Core.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.core\\entities\\ourteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEFA4332-16B4-4FA7-AA97-2FC69004161D}|LineConstruction.Core\\LineConstruction.Core.csproj|solutionrelative:lineconstruction.core\\entities\\ourteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\configrationsmanager\\serviceconfigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\configrationsmanager\\serviceconfigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\migrations\\20250205111149_jsonfile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\migrations\\20250205111149_jsonfile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\configrationsmanager\\ourserviceconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\configrationsmanager\\ourserviceconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.bla\\lineconstruction.bla.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2D1E4A70-2619-4210-B1CC-7A09CC1B8D3B}|LineConstruction.BLa\\LineConstruction.BLa.csproj|solutionrelative:lineconstruction.bla\\lineconstruction.bla.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\configrationsmanager\\ourteamconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\configrationsmanager\\ourteamconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\abstractions\\ourteam\\iourteamreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\abstractions\\ourteam\\iourteamreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\helpers\\configurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\helpers\\configurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\implementations\\ourteam\\ourteamwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\implementations\\ourteam\\ourteamwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\implementations\\ourteam\\ourteamreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\implementations\\ourteam\\ourteamreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\implementations\\ourservice\\ourservicewriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\implementations\\ourservice\\ourservicewriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\implementations\\ourservice\\ourservicereadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\implementations\\ourservice\\ourservicereadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\abstractions\\ourteam\\iourteamwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\abstractions\\ourteam\\iourteamwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\abstractions\\ourservice\\iourservicewriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\abstractions\\ourservice\\iourservicewriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\abstractions\\ourservice\\iourservicereadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\abstractions\\ourservice\\iourservicereadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\repositories\\abstractions\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\repositories\\abstractions\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEFA4332-16B4-4FA7-AA97-2FC69004161D}|LineConstruction.Core\\LineConstruction.Core.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEFA4332-16B4-4FA7-AA97-2FC69004161D}|LineConstruction.Core\\LineConstruction.Core.csproj|solutionrelative:lineconstruction.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEFA4332-16B4-4FA7-AA97-2FC69004161D}|LineConstruction.Core\\LineConstruction.Core.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.core\\entities\\baseauditable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEFA4332-16B4-4FA7-AA97-2FC69004161D}|LineConstruction.Core\\LineConstruction.Core.csproj|solutionrelative:lineconstruction.core\\entities\\baseauditable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\migrations\\20250205111149_jsonfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\migrations\\20250205111149_jsonfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\mycustomsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\mycustomsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.dal\\lineconstruction.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\lineconstruction.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\wwwroot\\forms\\contact.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\wwwroot\\forms\\contact.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\wwwroot\\forms\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\wwwroot\\forms\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\wwwroot\\forms\\quote.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\wwwroot\\forms\\quote.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\wwwroot\\assets\\vendor\\php-email-form\\validate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\wwwroot\\assets\\vendor\\php-email-form\\validate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\wwwroot\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\wwwroot\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|c:\\users\\acer\\source\\repos\\lineconstructionproject\\lineconstruction.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:06:18.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IOurServiceService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\Services\\Abstractions\\IOurServiceService.cs",
+              "RelativeDocumentMoniker": "LineConstruction.BLa\\Services\\Abstractions\\IOurServiceService.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\Services\\Abstractions\\IOurServiceService.cs",
+              "RelativeToolTip": "LineConstruction.BLa\\Services\\Abstractions\\IOurServiceService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:30:44.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAmwE8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T15:21:45.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\WriteRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Implementations\\WriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\WriteRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Implementations\\WriteRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwCQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:06:27.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OurServiceService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\Services\\Implementations\\OurServiceService.cs",
+              "RelativeDocumentMoniker": "LineConstruction.BLa\\Services\\Implementations\\OurServiceService.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\Services\\Implementations\\OurServiceService.cs",
+              "RelativeToolTip": "LineConstruction.BLa\\Services\\Implementations\\OurServiceService.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAswFcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:48:40.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\ReadRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Implementations\\ReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\ReadRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Implementations\\ReadRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAApwDAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:05:38.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T15:21:51.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Recycle.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Recycle.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Recycle.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Recycle.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Recycle.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:39:48.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:05:28.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowBUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T19:22:49.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Detail.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Detail.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Detail.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:19:15.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Update.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Update.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Update.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T19:56:12.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Error.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Error.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Error.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\Home\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T19:39:40.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Program.cs",
+              "RelativeToolTip": "LineConstruction.MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T20:44:08.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OurServiceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\DTOs\\OurServiceDTO.cs",
+              "RelativeDocumentMoniker": "LineConstruction.BLa\\DTOs\\OurServiceDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\DTOs\\OurServiceDTO.cs",
+              "RelativeToolTip": "LineConstruction.BLa\\DTOs\\OurServiceDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T19:12:11.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OurServiceProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\Profiles\\OurServiceProfile.cs",
+              "RelativeDocumentMoniker": "LineConstruction.BLa\\Profiles\\OurServiceProfile.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\Profiles\\OurServiceProfile.cs",
+              "RelativeToolTip": "LineConstruction.BLa\\Profiles\\OurServiceProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T19:13:00.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OurServiceConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\ConfigrationsManager\\OurServiceConfiguration.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\ConfigrationsManager\\OurServiceConfiguration.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\ConfigrationsManager\\OurServiceConfiguration.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\ConfigrationsManager\\OurServiceConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T15:01:26.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OurService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\Entities\\OurService.cs",
+              "RelativeDocumentMoniker": "LineConstruction.Core\\Entities\\OurService.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\Entities\\OurService.cs",
+              "RelativeToolTip": "LineConstruction.Core\\Entities\\OurService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T12:56:33.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ServiceConfigration.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\ConfigrationsManager\\ServiceConfigration.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\ConfigrationsManager\\ServiceConfigration.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\ConfigrationsManager\\ServiceConfigration.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\ConfigrationsManager\\ServiceConfigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T19:34:18.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OurTeam.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\Entities\\OurTeam.cs",
+              "RelativeDocumentMoniker": "LineConstruction.Core\\Entities\\OurTeam.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\Entities\\OurTeam.cs",
+              "RelativeToolTip": "LineConstruction.Core\\Entities\\OurTeam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T12:56:35.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20250205111149_jsonfile.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Migrations\\20250205111149_jsonfile.Designer.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Migrations\\20250205111149_jsonfile.Designer.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Migrations\\20250205111149_jsonfile.Designer.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Migrations\\20250205111149_jsonfile.Designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:54:16.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LineConstruction.BLa.csproj",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\LineConstruction.BLa.csproj",
+              "RelativeDocumentMoniker": "LineConstruction.BLa\\LineConstruction.BLa.csproj",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.BLa\\LineConstruction.BLa.csproj",
+              "RelativeToolTip": "LineConstruction.BLa\\LineConstruction.BLa.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-05T18:29:53.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OurTeamConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\ConfigrationsManager\\OurTeamConfiguration.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\ConfigrationsManager\\OurTeamConfiguration.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\ConfigrationsManager\\OurTeamConfiguration.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\ConfigrationsManager\\OurTeamConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T15:01:01.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T20:36:55.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAIBJwCcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T15:22:21.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T15:22:30.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAIBJwDUAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T20:36:33.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T15:22:41.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "LineConstruction.MVC\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-05T15:20:37.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IOurTeamReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\OurTeam\\IOurTeamReadRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Abstractions\\OurTeam\\IOurTeamReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\OurTeam\\IOurTeamReadRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Abstractions\\OurTeam\\IOurTeamReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:13:08.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Configurations.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Helpers\\Configurations.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Helpers\\Configurations.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Helpers\\Configurations.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Helpers\\Configurations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T10:43:03.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OurTeamWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\OurTeam\\OurTeamWriteRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Implementations\\OurTeam\\OurTeamWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\OurTeam\\OurTeamWriteRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Implementations\\OurTeam\\OurTeamWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:50:14.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "OurTeamReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\OurTeam\\OurTeamReadRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Implementations\\OurTeam\\OurTeamReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\OurTeam\\OurTeamReadRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Implementations\\OurTeam\\OurTeamReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:35:44.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OurServiceWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\OurService\\OurServiceWriteRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Implementations\\OurService\\OurServiceWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\OurService\\OurServiceWriteRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Implementations\\OurService\\OurServiceWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:54:21.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OurServiceReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\OurService\\OurServiceReadRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Implementations\\OurService\\OurServiceReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Implementations\\OurService\\OurServiceReadRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Implementations\\OurService\\OurServiceReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:55:48.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IOurTeamWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\OurTeam\\IOurTeamWriteRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Abstractions\\OurTeam\\IOurTeamWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\OurTeam\\IOurTeamWriteRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Abstractions\\OurTeam\\IOurTeamWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:52:30.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IOurServiceWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\OurService\\IOurServiceWriteRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Abstractions\\OurService\\IOurServiceWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\OurService\\IOurServiceWriteRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Abstractions\\OurService\\IOurServiceWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:53:21.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IOurServiceReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\OurService\\IOurServiceReadRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Abstractions\\OurService\\IOurServiceReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\OurService\\IOurServiceReadRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Abstractions\\OurService\\IOurServiceReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:52:23.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "LineConstruction.Core\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "LineConstruction.Core\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T12:56:45.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\IRepository.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Repositories\\Abstractions\\IRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Repositories\\Abstractions\\IRepository.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Repositories\\Abstractions\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T12:56:06.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BaseAuditable.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\Entities\\BaseAuditable.cs",
+              "RelativeDocumentMoniker": "LineConstruction.Core\\Entities\\BaseAuditable.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\Entities\\BaseAuditable.cs",
+              "RelativeToolTip": "LineConstruction.Core\\Entities\\BaseAuditable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T12:22:45.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20250205111149_jsonfile.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Migrations\\20250205111149_jsonfile.cs",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\Migrations\\20250205111149_jsonfile.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\Migrations\\20250205111149_jsonfile.cs",
+              "RelativeToolTip": "LineConstruction.DAL\\Migrations\\20250205111149_jsonfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T11:11:50.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "myCustomSettings.json",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\myCustomSettings.json",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\myCustomSettings.json",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\myCustomSettings.json",
+              "RelativeToolTip": "LineConstruction.MVC\\myCustomSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-05T10:58:33.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAIBZwDUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T21:00:42.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\appsettings.json",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\appsettings.json",
+              "RelativeToolTip": "LineConstruction.MVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-25T20:41:38.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "LineConstruction.DAL.csproj",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\LineConstruction.DAL.csproj",
+              "RelativeDocumentMoniker": "LineConstruction.DAL\\LineConstruction.DAL.csproj",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\LineConstruction.DAL.csproj",
+              "RelativeToolTip": "LineConstruction.DAL\\LineConstruction.DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-26T19:33:34.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "LineConstruction.MVC\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T20:58:36.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAswO8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T20:56:44.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Controllers\\ServicesController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "LineConstruction.MVC\\Controllers\\ServicesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T21:07:24.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "LineConstruction.MVC\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T21:02:22.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\assets\\js\\main.js",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\wwwroot\\assets\\js\\main.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\assets\\js\\main.js",
+              "RelativeToolTip": "LineConstruction.MVC\\wwwroot\\assets\\js\\main.js",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-25T21:19:01.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "contact.php",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\forms\\contact.php",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\wwwroot\\forms\\contact.php",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\forms\\contact.php",
+              "RelativeToolTip": "LineConstruction.MVC\\wwwroot\\forms\\contact.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-01-25T21:22:05.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "quote.php",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\forms\\quote.php",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\wwwroot\\forms\\quote.php",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\forms\\quote.php",
+              "RelativeToolTip": "LineConstruction.MVC\\wwwroot\\forms\\quote.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-01-25T21:23:02.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "validate.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+              "RelativeToolTip": "LineConstruction.MVC\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-25T21:23:53.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Readme.txt",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\forms\\Readme.txt",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\wwwroot\\forms\\Readme.txt",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\forms\\Readme.txt",
+              "RelativeToolTip": "LineConstruction.MVC\\wwwroot\\forms\\Readme.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-01-25T21:25:30.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "LineConstruction.MVC\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T21:00:35.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Services\\Index.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Services\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Services\\Index.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\Services\\Index.cshtml",
+              "ViewState": "AgIAABEBAAAAAAAAAAAmwCQBAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T21:07:31.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwEQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T20:36:15.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Project\\Index.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Project\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Project\\Index.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\Project\\Index.cshtml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAmwKkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T21:02:31.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAIBZwD0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T20:58:44.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "LineConstruction.MVC\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T20:56:35.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "LineConstruction.MVC\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-25T20:36:45.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LineConstruction.MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LineConstruction.MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T20:36:08.193Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

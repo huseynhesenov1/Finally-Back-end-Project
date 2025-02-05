@@ -1,0 +1,17 @@
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\bin\Debug\net8.0\LineConstruction.DAL.deps.json
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\bin\Debug\net8.0\LineConstruction.DAL.dll
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\bin\Debug\net8.0\LineConstruction.DAL.pdb
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\bin\Debug\net8.0\LineConstruction.Core.dll
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\bin\Debug\net8.0\LineConstruction.Core.pdb
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineConstruction.DAL.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineConstruction.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineConstruction.DAL.AssemblyInfoInputs.cache
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineConstruction.DAL.AssemblyInfo.cs
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineConstruction.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineCons.47C4B03E.Up2Date
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineConstruction.DAL.dll
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\refint\LineConstruction.DAL.dll
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineConstruction.DAL.pdb
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\ref\LineConstruction.DAL.dll
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\bin\Debug\net8.0\LineConstruction.DAL.runtimeconfig.json
+C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.DAL\obj\Debug\net8.0\LineConstruction.DAL.genruntimeconfig.cache
