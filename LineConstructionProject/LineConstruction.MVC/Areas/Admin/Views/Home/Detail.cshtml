@@ -26,7 +26,6 @@
 							<th>IsDeleted</th>
 							<th>Update</th>
 							<th>SoftDelete</th>
-							<th>Details</th>
 						</tr>
 					</thead>
 					<tfoot>
@@ -39,7 +38,6 @@
 							<th>IsDeleted</th>
 							<th>Update</th>
 							<th>SoftDelete</th>
-							<th>Details</th>
 						</tr>
 					</tfoot>
 					<tbody>
@@ -54,7 +52,6 @@
 							<td>@Model.IsDeleted</td>
 							<td><a asp-area="Admin" asp-controller="Home" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-primary">Update</a></td>
 							<td><a asp-area="Admin" asp-controller="Home" asp-action="SoftDelete" asp-route-id="@Model.Id" class="btn btn-danger">SoftDelete</a></td>
-							<td><a asp-area="Admin" asp-controller="Home" asp-action="Detail" asp-route-id="@Model.Id" class="btn btn-info">Details</a></td>
 
 						</tr>
 

@@ -15,3 +15,21 @@ C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.BLa\obj\Debu
 C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\refint\LineConstruction.BLa.dll
 C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.pdb
 C:\Users\ACER\source\repos\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\ref\LineConstruction.BLa.dll
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\bin\Debug\net8.0\LineConstruction.BLa.deps.json
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\bin\Debug\net8.0\LineConstruction.BLa.dll
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\bin\Debug\net8.0\LineConstruction.BLa.pdb
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\bin\Debug\net8.0\LineConstruction.Core.dll
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\bin\Debug\net8.0\LineConstruction.DAL.dll
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\bin\Debug\net8.0\LineConstruction.DAL.pdb
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\bin\Debug\net8.0\LineConstruction.Core.pdb
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.csproj.AssemblyReference.cache
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.AssemblyInfoInputs.cache
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.AssemblyInfo.cs
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.sourcelink.json
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineCons.4EA1A98C.Up2Date
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.dll
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\refint\LineConstruction.BLa.dll
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\LineConstruction.BLa.pdb
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.BLa\obj\Debug\net8.0\ref\LineConstruction.BLa.dll

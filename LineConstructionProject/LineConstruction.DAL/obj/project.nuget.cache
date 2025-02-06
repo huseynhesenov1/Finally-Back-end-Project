@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Joc4lC3jO2A=",
+  "dgSpecHash": "IMHdcIRBg5w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\LineConstruction.DAL.csproj",
+  "projectFilePath": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\LineConstruction.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

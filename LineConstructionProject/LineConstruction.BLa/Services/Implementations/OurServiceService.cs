@@ -25,7 +25,12 @@ namespace LineConstruction.BLa.Services.Implementations
         }
         public async Task<OurService> GetByIdAsync(int id)
         {
-            return await _ourServiceReadRepository.GetByIdAsync(id, false);
+            OurService ourService = await _ourServiceReadRepository.GetByIdAsync(id, false);
+            if (ourService is null)
+            {
+                throw new Exception("Bu Id ye uygun deyer tapilmadi");
+            }
+            return ourService;
         }
 
         public async Task<OurService> SoftDeleteAsync(int id)

@@ -4330,11 +4330,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\LineConstruction.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\LineConstruction.DAL.csproj",
       "projectName": "LineConstruction.DAL",
-      "projectPath": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\LineConstruction.DAL.csproj",
+      "projectPath": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\LineConstruction.DAL.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.DAL\\obj\\",
+      "outputPath": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4352,8 +4352,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\LineConstruction.Core.csproj": {
-              "projectPath": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\LineConstruction.Core.csproj"
+            "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\LineConstruction.Core.csproj": {
+              "projectPath": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\LineConstruction.Core.csproj"
             }
           }
         }

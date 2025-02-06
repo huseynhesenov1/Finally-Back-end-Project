@@ -6,6 +6,7 @@
         public string Title { get; set; }
         public string ImagePath { get; set; }
         public int OurServiceId { get; set; }
+        public int ExperienceYear { get; set; }
         public OurService OurService { get; set; }
     }
 }

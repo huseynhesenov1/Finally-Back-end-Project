@@ -1,0 +1,79 @@
+﻿  @using LineConstruction.Core.Entities
+ @model OurTeam
+
+
+<div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h3 mb-2 text-gray-800">Services Table</h1>
+
+
+	<!-- DataTales Example -->
+	<div class="card shadow mb-4">
+		<div class="card-header py-3">
+			<h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+		</div>
+		<div class="card-body">
+			<div class="table-responsive">
+				<a asp-action="Create" class="btn btn-success mb-4">Create</a>
+				<a asp-action="Recycle" class="btn btn-warning mb-4 ml-3">Recycle Bin</a>
+				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>FullName</th>
+							<th>Title</th>
+							<th>ImagePath</th>
+							<th>Service</th>
+							<th>ExperienceYear</th>
+							<th>IsDeleted</th>
+							<th>Create</th>
+							<th>Update</th>
+							<th>Update</th>
+							<th>SoftDelete</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th>#</th>
+							<th>FullName</th>
+							<th>Title</th>
+							<th>ImagePath</th>
+							<th>Service</th>
+							<th>ExperienceYear</th>
+							<th>IsDeleted</th>
+							<th>Create</th>
+							<th>Update</th>
+							<th>Update</th>
+							<th>SoftDelete</th>
+						</tr>
+					</tfoot>
+					<tbody>
+						
+
+							<tr>
+								<td>@Model.Id</td>
+							<td>@Model.FullName</td>
+							<td>@Model.Title</td>
+							<td> <img height="100" width="100" src="~/uploads/Teams/@Model.ImagePath" alt="Alternate Text" /></td>
+							<td>@Model.OurService.Title</td>
+
+							<td>@Model.ExperienceYear</td>
+							<td>@Model.IsDeleted</td>
+							<td>@Model.CreateAt</td>
+							<td>@Model.UpdateAt</td>
+							<td><a asp-area="Admin" asp-controller="Team" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-primary">Update</a></td>
+							<td><a asp-area="Admin" asp-controller="Team" asp-action="SoftDelete" asp-route-id="@Model.Id" class="btn btn-danger">SoftDelete</a></td>
+
+							</tr>
+
+						
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+</div>
+

@@ -1,12 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LineConstruction.BLa.Services.Abstractions;
+using LineConstruction.BLa.Services.Implementations;
+using LineConstruction.Core.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LineConstruction.MVC.Controllers
 {
     public class ServicesController : Controller
     {
-        public IActionResult Index()
+        private readonly IOurServiceService _serviceService;
+
+        public ServicesController(IOurServiceService serviceService)
         {
-            return View();
+            _serviceService = serviceService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            ICollection<OurService> ourService = await _serviceService.GetAllAsync();
+            return View(ourService);
         }
     }
 }

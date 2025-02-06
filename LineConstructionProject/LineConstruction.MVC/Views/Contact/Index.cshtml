@@ -51,35 +51,78 @@
                 </div><!-- End Google Maps -->
 
                 <div class="col-lg-6">
-                    <form action="~/forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
-                        <div class="row gy-4">
+                         <form id="contact-form">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label lang"
+                >Name</label
+              >
+              <input
+              id="input-focus"
+              autocomplete="off" 
+                type="text"
+                name="name"
+                class="form-control"
+                id="exampleFormControlInput1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label lang"
+                >Surname</label
+              >
+              <input
+              id="input-focus"
+              autocomplete="off" 
 
-                            <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                            </div>
+                type="text"
+                name="surname"
+                class="form-control"
+                id="exampleFormControlInput1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label lang"
+                >Phone</label
+              >
+              <input 
+              autocomplete="off" 
 
-                            <div class="col-md-6 ">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                            </div>
+                id="input-focus"
+                type="tel"
+                name="phone"
+                class="form-control"
+                id="exampleFormControlInput1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label lang"
+                >Email address</label
+              >
+              <input
+               autocomplete="off" 
+               
+              id="input-focus"
 
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                            </div>
+                type="email"
+                name="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label lang"
+                >Write Message</label
+              >
+              <textarea
+              id="input-focus"
 
-                            <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                <button type="submit">Send Message</button>
-                            </div>
-
-                        </div>
-                    </form>
+                class="form-control"
+                name="message"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button style="border-radius: 0px; background-color: black;" type="submit" class="btn btn-success lang">Send message</button>
+          </form>
                 </div><!-- End Contact Form -->
 
             </div>
@@ -89,3 +132,4 @@
     </section><!-- /Contact Section -->
 
 </main>
+

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\LineConstruction.Core.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\LineConstruction.Core.csproj",
       "projectName": "LineConstruction.Core",
-      "projectPath": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\LineConstruction.Core.csproj",
+      "projectPath": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\LineConstruction.Core.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACER\\source\\repos\\LineConstructionProject\\LineConstruction.Core\\obj\\",
+      "outputPath": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",

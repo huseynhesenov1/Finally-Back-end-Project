@@ -1,0 +1,32 @@
+﻿@using LineConstruction.BLa.DTOs
+@model OurTeamUpdateDTO
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <input asp-for="FullName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="FullName"></span>
+        </div>
+
+        <div class="mb-3">
+            <input asp-for="Title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+        <div class="mb-3">
+            <input asp-for="ExperienceYear" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="ExperienceYear"></span>
+        </div>
+        <div class="mb-3">
+            <input asp-for="ImagePath" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="ImagePath"></span>
+        </div>
+        <div class="mb-3">
+            <input asp-for="OurServiceId" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="OurServiceId"></span>
+        </div>
+        <div>
+            <span class="text-danger">@Html.ValidationSummary()</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

@@ -6,23 +6,23 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class HomeController : Controller
-    {
-        private readonly IOurServiceService _ourServiceService;
-        private readonly IMapper _mapper;
+	[Area("Admin")]
+	public class HomeController : Controller
+	{
+		private readonly IOurServiceService _ourServiceService;
+		private readonly IMapper _mapper;
 
-        public HomeController(IOurServiceService ourServiceService, IMapper mapper)
-        {
-            _ourServiceService = ourServiceService;
-            _mapper = mapper;
-        }
+		public HomeController(IOurServiceService ourServiceService, IMapper mapper)
+		{
+			_ourServiceService = ourServiceService;
+			_mapper = mapper;
+		}
 
-        public async Task<IActionResult> Index()
-        {
-            ICollection<OurService> ourService = await _ourServiceService.GetAllAsync();
-            return View(ourService);
-        }
+		public async Task<IActionResult> Index()
+		{
+			ICollection<OurService> ourService = await _ourServiceService.GetAllAsync();
+			return View(ourService);
+		}
 
 		public async Task<IActionResult> Recycle()
 		{
@@ -31,54 +31,77 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
 		}
 
 		public IActionResult Create()
-        {
-            return View();
-        }
-        [HttpPost]
-        public async Task<IActionResult> Create(OurServiceDTO ourServiceDTO)
-        {
-            await _ourServiceService.CreateAsync(ourServiceDTO);
-            return RedirectToAction("Index");
-        }
-        public async Task<IActionResult> SoftDelete(int id)
-        {
-            try
-            {
-                await _ourServiceService.SoftDeleteAsync(id);
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                return RedirectToAction("Error");
+		{
+			return View();
+		}
+		[HttpPost]
+		public async Task<IActionResult> Create(OurServiceDTO ourServiceDTO)
+		{
+			await _ourServiceService.CreateAsync(ourServiceDTO);
+			return RedirectToAction("Index");
+		}
+		public async Task<IActionResult> SoftDelete(int id)
+		{
+			try
+			{
+				await _ourServiceService.SoftDeleteAsync(id);
+				return RedirectToAction("Index");
+			}
+			catch (Exception ex)
+			{
+				return RedirectToAction("Error");
 
-            }
-        }
-        public IActionResult Error()
-        {
-            return View();
-        }
+			}
+		}
+		public IActionResult Error()
+		{
+			return View();
+		}
 
-        public async Task<IActionResult> Update(int id)
-        {
-            OurService ourService = await _ourServiceService.GetByIdAsync(id);
-            OurServiceDTO ourServiceDTO = _mapper.Map<OurServiceDTO>(ourService);
-            return View(ourServiceDTO);
-        }
-        [HttpPost]
-        public async Task<IActionResult> Update(int id, OurServiceDTO ourServiceDTO)
-        {
-            await _ourServiceService.UpdateAsync(id, ourServiceDTO);
-            return RedirectToAction("Index");
+		public async Task<IActionResult> Update(int id)
+		{
+			
+			try
+			{
+				OurService ourService = await _ourServiceService.GetByIdAsync(id);
+				OurServiceDTO ourServiceDTO = _mapper.Map<OurServiceDTO>(ourService);
+				return View(ourServiceDTO);
+			}
+			catch (Exception ex)
+			{
+				return RedirectToAction("Error");
+			}
 
-        }
-        public async Task<IActionResult> Detail(int id)
-        {
-			OurService ourService = await _ourServiceService.GetByIdAsync(id);
-			return View(ourService);
-        }
-        public async Task<IActionResult> Restore(int id)
-        {
-          
+		}
+		[HttpPost]
+		public async Task<IActionResult> Update(int id, OurServiceDTO ourServiceDTO)
+		{
+			try
+			{
+				await _ourServiceService.UpdateAsync(id, ourServiceDTO);
+				return RedirectToAction("Index");
+			}
+			catch (Exception ex)
+			{
+				return RedirectToAction("Error");
+			}
+		}
+		public async Task<IActionResult> Detail(int id)
+		{
+			try
+			{
+				OurService ourService = await _ourServiceService.GetByIdAsync(id);
+				return View(ourService);
+			}
+			catch (Exception ex)
+			{
+				return RedirectToAction("Error");
+
+			}
+		}
+		public async Task<IActionResult> Restore(int id)
+		{
+
 			try
 			{
 				await _ourServiceService.RestoreAsync(id);
