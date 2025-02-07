@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cRPUygBL3cX27tRvsJ1piTGEyFI3E2oQl8aohq3zTNk=",
+  "Hash": "prR2zKXUL5G7zGPgNQYSvKL4iT7LXJd0SOtcZ6PHrwQ=",
   "Source": "LineConstruction.MVC",
   "BasePath": "_content/LineConstruction.MVC",
   "Mode": "Default",
@@ -38509,6 +38509,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Teams\\a4c484a8-0407-4100-9cc7-ac13a0f57991image (11).png"
+    },
+    {
+      "Identity": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\d45e4e55-9529-4e60-b8e8-dccb416fa9efimage (7).png",
+      "SourceId": "LineConstruction.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\",
+      "BasePath": "_content/LineConstruction.MVC",
+      "RelativePath": "uploads/Teams/d45e4e55-9529-4e60-b8e8-dccb416fa9efimage (7).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Teams\\d45e4e55-9529-4e60-b8e8-dccb416fa9efimage (7).png"
     },
     {
       "Identity": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\dedd4403-0600-4770-acf2-489878f1482fimage (11).png",

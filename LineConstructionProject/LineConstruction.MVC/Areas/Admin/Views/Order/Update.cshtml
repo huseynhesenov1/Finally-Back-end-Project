@@ -1,0 +1,50 @@
+﻿@using LineConstruction.BLa.DTOs
+@model OrderDTO
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <input asp-for="ClientFullName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="ClientFullName"></span>
+        </div>
+
+        <div class="mb-3">
+            <input asp-for="ClientPhoneNumber" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="ClientPhoneNumber"></span>
+        </div>
+        <div class="mb-3">
+            <input asp-for="ClientEmail" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="ClientEmail"></span>
+        </div> 
+        <div class="mb-3">
+            <input asp-for="Local" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="Local"></span>
+        </div> 
+        <div class="mb-3">
+            <input asp-for="Problem" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="Problem"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="OurServiceId" class="control-label"></label>
+            <select asp-for="OurServiceId" class="form-control" asp-items="ViewBag.OurServices">
+                <option hidden value="">-- Select OurServices --</option>
+            </select>
+            <span asp-validation-for="OurServiceId" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="OurTeamId" class="control-label"></label>
+            <select asp-for="OurTeamId" class="form-control" asp-items="ViewBag.OurTeams">
+                <option hidden value="">-- Select Teams --</option>
+            </select>
+            <span asp-validation-for="OurTeamId" class="text-danger"></span>
+        </div>
+       
+
+        <div>
+            <span class="text-danger">@Html.ValidationSummary()</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

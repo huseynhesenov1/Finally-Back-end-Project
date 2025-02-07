@@ -15,6 +15,8 @@ namespace LineConstruction.DAL.ConfigrationsManager
             services.AddScoped<IOurServiceWriteRepository, OurServiceWriteRepository>();
             services.AddScoped<IOurTeamReadRepository, OurTeamReadRepository>();
             services.AddScoped<IOurTeamWriteRepository, OurTeamWriteRepository>();
+            services.AddScoped<IOrderReadRepository, OrderReadRepository>();
+            services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
         }
     }
 }

@@ -1,5 +1,10 @@
-﻿@using LineConstruction.Core.Entities
-@model ICollection<OurService>
+﻿@using LineConstruction.BLa.ViewModels
+@model ServiceVM;
+
+
+ @* @model ICollection<OurService> *@
+
+
 
 <main class="main">
 
@@ -22,11 +27,11 @@
 
 			<div class="row gy-4">
 
-				@if (Model != null)
+				@if (Model.OurServices != null)
 				{
 
 
-					@foreach (var item in Model)
+					@foreach (var item in Model.OurServices)
 					{
 
 						<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -42,8 +47,8 @@
 
 					}
 					<!-- End Service Item -->
-				}
-
+				} 
+ 
 
 
 
@@ -61,39 +66,66 @@
 			<form method="post">
 				<div class="mb-3">
 					<label class="form-label">Name</label>
-					<input id="input-focus"
+					<input asp-for="Order.ClientFullName" id="input-focus"
 						   autocomplete="off"
 						   class="form-control"
 						   />
+					<span asp-validation-for="Order.ClientFullName" class="text-danger"></span>
+
 				</div>
 				
 				<div class="mb-3">
 					<label for="exampleFormControlInput1" class="form-label  ">Phone</label>
-					<input autocomplete="off"
+					<input asp-for="Order.ClientPhoneNumber" autocomplete="off"
 						   id="input-focus"
 						   class="form-control" />
+					<span asp-validation-for="Order.ClientPhoneNumber" class="text-danger"></span>
+
 				</div>
 				<div class="mb-3">
 					<label class="form-label  ">Local</label>
-					<input id="input-focus"
+					<input asp-for="Order.Local" id="input-focus"
 						   autocomplete="off"
 						   class="form-control" />
+					<span asp-validation-for="Order.Local" class="text-danger"></span>
+
 				</div>
 				<div class="mb-3">
 					<label for="exampleFormControlInput1" class="form-label  ">Email address</label>
-					<input autocomplete="off"
+					<input asp-for="Order.ClientEmail" autocomplete="off"
 						   id="input-focus"
 						   class="form-control"
 						   type="email"/>
+					<span asp-validation-for="Order.ClientEmail" class="text-danger"></span>
+
 				</div>
+				<div class="form-group">
+					<label asp-for="Order.OurServiceId" class="control-label"></label>
+					<select asp-for="Order.OurServiceId" class="form-control" asp-items="ViewBag.OurServices">
+						<option hidden value="">-- Select OurServices --</option>
+					</select>
+					<span asp-validation-for="Order.OurServiceId" class="text-danger"></span>
+				</div>
+
+
+				@* <div class="form-group">
+					<label asp-for="OurTeamId" class="control-label"></label>
+					<select asp-for="OurTeamId" class="form-control" asp-items="ViewBag.OurTeams">
+						<option hidden value="">-- Select Teams --</option>
+					</select>
+					<span asp-validation-for="OurTeamId" class="text-danger"></span>
+				</div> *@
+
 				<div class="mb-3">
-					<label for="exampleFormControlTextarea1" class="form-label  ">Write Message</label>
-					<textarea id="input-focus"
+					<label  for="exampleFormControlTextarea1" class="form-label  ">Write Problem</label>
+					<textarea asp-for="Order.Problem" id="input-focus"
 							  class="form-control"
 							  rows="3"></textarea>
+					<span asp-validation-for="Order.Problem" class="text-danger"></span>
+
 							   
 				</div>
-				<button style="border-radius: 0px; background-color: black;" type="submit" class="btn btn-success lang">Send message</button>
+				<button type="submit" style="border-radius: 0px; background-color: black;" class="btn btn-success">Send message</button>
 			</form>
 		</div><!-- End Contact Form -->
 	</section>

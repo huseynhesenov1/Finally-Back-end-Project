@@ -8,5 +8,7 @@
         public int OurServiceId { get; set; }
         public int ExperienceYear { get; set; }
         public OurService OurService { get; set; }
+		public ICollection<Order> Order { get; set; }
+
     }
 }

@@ -6,6 +6,7 @@ using LineConstruction.DAL.ConfigrationsManager;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IOurServiceService, OurServiceService>();
 builder.Services.AddScoped<IOurTeamService, OurTeamService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddAutoMapper(typeof(OurServiceProfile).Assembly);
 
 builder.Services.AddControllersWithViews();

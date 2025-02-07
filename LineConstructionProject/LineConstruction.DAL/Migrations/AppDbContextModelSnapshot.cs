@@ -22,6 +22,70 @@ namespace LineConstruction.DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("LineConstruction.Core.Entities.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClientEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClientFullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClientPhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Local")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OurServiceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OurTeamId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Problem")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OurServiceId");
+
+                    b.HasIndex("OurTeamId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("LineConstruction.Core.Entities.OurService", b =>
                 {
                     b.Property<int>("Id")
@@ -122,15 +186,46 @@ namespace LineConstruction.DAL.Migrations
                     b.ToTable("OurTeams");
                 });
 
-            modelBuilder.Entity("LineConstruction.Core.Entities.OurTeam", b =>
+            modelBuilder.Entity("LineConstruction.Core.Entities.Order", b =>
                 {
                     b.HasOne("LineConstruction.Core.Entities.OurService", "OurService")
-                        .WithMany()
+                        .WithMany("Order")
                         .HasForeignKey("OurServiceId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("LineConstruction.Core.Entities.OurTeam", "OurTeam")
+                        .WithMany("Order")
+                        .HasForeignKey("OurTeamId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("OurService");
+
+                    b.Navigation("OurTeam");
+                });
+
+            modelBuilder.Entity("LineConstruction.Core.Entities.OurTeam", b =>
+                {
+                    b.HasOne("LineConstruction.Core.Entities.OurService", "OurService")
+                        .WithMany("Team")
+                        .HasForeignKey("OurServiceId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("OurService");
+                });
+
+            modelBuilder.Entity("LineConstruction.Core.Entities.OurService", b =>
+                {
+                    b.Navigation("Order");
+
+                    b.Navigation("Team");
+                });
+
+            modelBuilder.Entity("LineConstruction.Core.Entities.OurTeam", b =>
+                {
+                    b.Navigation("Order");
                 });
 #pragma warning restore 612, 618
         }
