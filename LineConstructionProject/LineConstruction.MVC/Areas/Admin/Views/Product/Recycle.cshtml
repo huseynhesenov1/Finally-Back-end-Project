@@ -1,0 +1,77 @@
+﻿  @using LineConstruction.Core.Entities
+ @model ICollection<Product>
+
+
+<div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h3 mb-2 text-gray-800">Teams Table</h1>
+
+
+	<!-- DataTales Example -->
+	<div class="card shadow mb-4">
+		<div class="card-header py-3">
+			<h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+		</div>
+		<div class="card-body">
+			<div class="table-responsive">
+				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Title</th>
+							<th>Description</th>
+							<th>ImagePath</th>
+							<th>CatagoryId</th>
+							<th>OldPrice</th>
+							<th>NewPrice</th>
+							<th>IsDeleted</th>
+							<th>Update</th>
+							<th>SoftDelete</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th>#</th>
+							<th>Title</th>
+							<th>Description</th>
+							<th>ImagePath</th>
+							<th>CatagoryId</th>
+							<th>OldPrice</th>
+							<th>NewPrice</th>
+							<th>IsDeleted</th>
+							<th>Update</th>
+							<th>SoftDelete</th>
+							<th>Details</th>
+						</tr>
+					</tfoot>
+					<tbody>
+						@foreach (var item in Model)
+						{
+
+							<tr>
+								<td>@item.Id</td>
+								<td>@item.Title</td>
+								<td>@item.Description</td>
+								<td> <img height="100" width="100" src="~/uploads/Product/@item.ImagePath" alt="Alternate Text" /></td>
+								<td>@item.Catagory.Title</td>
+								<td>@item.OldPrice</td>
+								<td>@item.NewPrice</td>
+								<td>@item.IsDeleted</td>
+								<td><a asp-area="Admin" asp-controller="Product" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary">Update</a></td>
+								<td><a asp-area="Admin" asp-controller="Product" asp-action="Restore" asp-route-id="@item.Id" class="btn btn-success">Restore</a></td>
+								<td><a asp-area="Admin" asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info">Details</a></td>
+
+							</tr>
+
+						}
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+</div>
+

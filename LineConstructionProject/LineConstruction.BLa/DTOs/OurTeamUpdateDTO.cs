@@ -5,6 +5,7 @@ namespace LineConstruction.BLa.DTOs
 {
 	public class OurTeamUpdateDTO
 	{
+
 		public int Id { get; set; }
 		[Display(Prompt = "ExperineceYear")]
 
@@ -15,6 +16,7 @@ namespace LineConstruction.BLa.DTOs
 		[Display(Prompt = "Title")]
 
 		public string Title { get; set; }
+		
 		public IFormFile? ImagePath { get; set; }
 		[Display(Prompt = "OurServiceId")]
 

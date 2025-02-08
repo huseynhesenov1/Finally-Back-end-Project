@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IOurServiceService, OurServiceService>();
 builder.Services.AddScoped<IOurTeamService, OurTeamService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ICatagoryService, CatagoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddAutoMapper(typeof(OurServiceProfile).Assembly);
 
 builder.Services.AddControllersWithViews();

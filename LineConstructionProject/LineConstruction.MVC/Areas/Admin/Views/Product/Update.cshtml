@@ -1,0 +1,40 @@
+﻿@using LineConstruction.BLa.DTOs
+@model ProductUpdateDTO
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <input asp-for="Title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+
+        <div class="mb-3">
+            <input asp-for="Description" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+        <div class="mb-3">
+            <input asp-for="NewPrice" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="NewPrice"></span>
+        </div>
+        <div class="mb-3">
+            <input asp-for="OldPrice" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="OldPrice"></span>
+        </div>
+        <div class="mb-3">
+            <input asp-for="ImagePath" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="ImagePath"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CatagoryId" class="control-label"></label>
+            <select asp-for="CatagoryId" class="form-control" asp-items="ViewBag.Catagory">
+                <option hidden value="">-- Select OurServices --</option>
+            </select>
+            <span asp-validation-for="CatagoryId" class="text-danger"></span>
+        </div>
+
+        <div>
+            <span class="text-danger">@Html.ValidationSummary()</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
