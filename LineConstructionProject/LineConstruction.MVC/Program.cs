@@ -9,14 +9,14 @@ builder.Services.AddScoped<IOurTeamService, OurTeamService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICatagoryService, CatagoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IVacancyService, VacancyService>();
+builder.Services.AddScoped<IAddedCVService, AddedCVService>();
 builder.Services.AddAutoMapper(typeof(OurServiceProfile).Assembly);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddServices();
 var app = builder.Build();
 app.UseStaticFiles();
-
-
 
 
 app.MapControllerRoute(

@@ -32368,6 +32368,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\forms\Readme.txt))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\CV\108be759-b734-4b39-9387-07c055f9aeb9drel.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LineConstruction.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LineConstruction.MVC</BasePath>
+      <RelativePath>uploads/CV/108be759-b734-4b39-9387-07c055f9aeb9drel.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\CV\108be759-b734-4b39-9387-07c055f9aeb9drel.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\CV\5d0a23d3-3616-4b95-b11c-94c4e17480153e3e3e3e3.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>LineConstruction.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LineConstruction.MVC</BasePath>
+      <RelativePath>uploads/CV/5d0a23d3-3616-4b95-b11c-94c4e17480153e3e3e3e3.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\CV\5d0a23d3-3616-4b95-b11c-94c4e17480153e3e3e3e3.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\CV\b05f037e-4ec2-46c2-9b3b-b15daf9ff2db3e3e3e3e3.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>LineConstruction.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LineConstruction.MVC</BasePath>
+      <RelativePath>uploads/CV/b05f037e-4ec2-46c2-9b3b-b15daf9ff2db3e3e3e3e3.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\CV\b05f037e-4ec2-46c2-9b3b-b15daf9ff2db3e3e3e3e3.docx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Product\37a25b59-4950-4560-9ad5-1b689f2860deimage (7).png))">
       <SourceType>Package</SourceType>
       <SourceId>LineConstruction.MVC</SourceId>
@@ -32415,6 +32463,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Product\b61544e5-a886-4121-aa84-fd292c6d052alagonda.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Product\fc598706-a050-4e0a-ad6a-5bc9903b9508drel.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>LineConstruction.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LineConstruction.MVC</BasePath>
+      <RelativePath>uploads/Product/fc598706-a050-4e0a-ad6a-5bc9903b9508drel.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Product\fc598706-a050-4e0a-ad6a-5bc9903b9508drel.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\Teams\32ba78df-2f22-4733-b77a-236d71c479ffWhatsApp Image 2023-10-07 at 18.48.35.jpeg))">
       <SourceType>Package</SourceType>

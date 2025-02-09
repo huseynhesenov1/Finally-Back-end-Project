@@ -1,0 +1,39 @@
+﻿@using LineConstruction.Core.Entities
+@model Vacancy
+
+<main class="main">
+	<div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+		<div class="container position-relative">
+			<h1>Vacancy</h1>
+			<nav class="breadcrumbs">
+				<ol>
+					<li><a asp-controller="Home" asp-action="Index">Home</a></li>
+
+					<li class="current">Vacancy</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+<div class="container mt-4 mb-4">
+	<div style="border: 1px solid black ; border-radius : 20px;padding: 50px;" class="card">
+
+		<h4>Ümumi məlumat</h4>
+		<h5>Line Construction MMC "@Model.Title" vakansiyası üzrə işə qəbul elan edir!</h5>
+		<h5>
+			Vakansiya ilə bağlı müraciət etmək istəyənlər " @Model.Title" adını mövzu hissəsində qeyd etməklə CV formalarını   Career@LineConstruction.az elektron poçt ünvanına göndərə bilərlər.
+		</h5>
+		<br />
+		<br />
+		<h4>Öhdəliklər</h4>
+		<h5>@Model.Obligation</h5>
+		<br />
+		<br />
+		<h4>Tələblər</h4>
+		<h5>@Model.Requirments</h5>
+		<br />
+		<br />
+		<h4>Son müraciət tarixi</h4>
+		<h5>@Model.Deadline</h5>
+	</div>
+</div>
+</main>

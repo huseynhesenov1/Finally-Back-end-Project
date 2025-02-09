@@ -1,7 +1,9 @@
 ﻿using LineConstruction.BLa.DTOs;
+using LineConstruction.BLa.Services.Abstractions;
 using LineConstruction.Core.Entities;
 using LineConstruction.DAL.Contexts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 
 namespace LineConstruction.MVC.Controllers
@@ -9,17 +11,21 @@ namespace LineConstruction.MVC.Controllers
     public class CartController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IProductService _productService;
 
-        public CartController(AppDbContext context)
-        {
-            _context = context;
-        }
+		public CartController(AppDbContext context, IProductService productService)
+		{
+			_context = context;
+			_productService = productService;
+		}
 
-        public IActionResult Index()
+		public IActionResult Index()
         {
             BasketDto basket = GetBasket();
-            return View(basket);
+			
+			return View(basket);
         }
+        
         public IActionResult AddToBasket(int productId)
         {
             Product? product = _context.Products.Find(productId);
@@ -65,7 +71,7 @@ namespace LineConstruction.MVC.Controllers
             Response.Cookies.Append("Basket", cookieBasket, cookieOption);
 
 
-            return Ok();
+            return RedirectToAction("Index" , "Shop");
         }
         public BasketDto GetBasket()
         {
@@ -76,7 +82,32 @@ namespace LineConstruction.MVC.Controllers
                 return existingBasket;
 
             }
-            return null;
+            return new BasketDto();
         }
-    }
+		[HttpPost]
+		public IActionResult RemoveFromBasket(int productId)
+		{
+			var basket = GetBasket();
+			if (basket == null || basket.Items.Count == 0)
+			{
+				return NotFound("Basket boşdur və ya tapılmadı.");
+			}
+
+			var itemToRemove = basket.Items.FirstOrDefault(g => g.Id == productId);
+			if (itemToRemove != null)
+			{
+				basket.Items.Remove(itemToRemove);
+				var cookieOption = new CookieOptions()
+				{
+					Expires = DateTime.Now.AddDays(7),
+					HttpOnly = true
+				};
+				var cookieBasket = JsonConvert.SerializeObject(basket);
+				Response.Cookies.Append("Basket", cookieBasket, cookieOption);
+				return Ok();
+			}
+
+			return NotFound("Məhsul tapılmadı.");
+		}
+	}
 }

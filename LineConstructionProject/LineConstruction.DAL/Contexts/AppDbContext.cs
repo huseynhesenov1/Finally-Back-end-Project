@@ -12,6 +12,8 @@ namespace LineConstruction.DAL.Contexts
         public DbSet<Order> Orders { get; set; }
         public DbSet<Catagory> Catagories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Vacancy> Vacancies { get; set; }
+        public DbSet<AddedCV> AddedCVs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 			foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))

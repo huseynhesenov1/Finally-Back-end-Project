@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0YWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/CV/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ1ZcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -146,6 +150,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhbVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Vacancy/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmFjYW5jeVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Vacancy/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmFjYW5jeVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Vacancy/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmFjYW5jeVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Vacancy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmFjYW5jeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Vacancy/Recycle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmFjYW5jeVxSZWN5Y2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Vacancy/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmFjYW5jeVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -192,6 +220,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Vacancy/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjYW5jeVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Vacancy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFjYW5jeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/_ViewImports.cshtml]

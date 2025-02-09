@@ -21,6 +21,10 @@ namespace LineConstruction.DAL.ConfigrationsManager
             services.AddScoped<ICatagoryReadRepository, CatagoryReadRepository>();
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
+            services.AddScoped<IVacancyWriteRepository, VacancyWriteRepository>();
+            services.AddScoped<IVacancyReadRepository, VacancyReadRepository>();
+            services.AddScoped<IAddedCVReadRepository, AddedCVReadRepository>();
+            services.AddScoped<IAddedCVWriteRepository, AddedCVWriteRepository>();
         }
     }
 }

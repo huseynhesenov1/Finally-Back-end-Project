@@ -1,0 +1,115 @@
+﻿@using LineConstruction.BLa.ViewModels
+@model VacancyVM
+<main class="main">
+	<div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+		<div class="container position-relative">
+			<h1>Vacancy</h1>
+			<nav class="breadcrumbs">
+				<ol>
+					<li><a asp-controller="Home" asp-action="Index">Home</a></li>
+					<li class="current">Vacancy</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+	<section id="blog-posts" class="blog-posts section">
+
+		<div class="container">
+			<div class="row gy-4">
+				<div class="col-lg-4">
+					<article class="position-relative h-100">
+
+
+						<div class="post-content d-flex flex-column">
+							<form method="post" enctype="multipart/form-data">
+								<div class="mb-3">
+									<input asp-for="AddedCVCreateDTO.Title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+									<span class="text-danger" asp-validation-for="AddedCVCreateDTO.Title"></span>
+								</div>
+								<div class="mb-3">
+									<input asp-for="AddedCVCreateDTO.CvPath"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+									<span class="text-danger" asp-validation-for="AddedCVCreateDTO.CvPath"></span>
+								</div>
+								<div>
+									<span class="text-danger">@Html.ValidationSummary()</span>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+
+
+
+
+							</form>
+						</div>
+
+					</article>
+				</div>
+
+
+
+
+
+				@if (Model.Vacancies != null)
+				{
+					@foreach (var item in Model.Vacancies)
+					{
+						<div class="col-lg-4">
+							<article class="position-relative h-100">
+
+
+
+								<div class="post-content d-flex flex-column">
+
+									<h3 class="post-title">
+										@item.Title
+									</h3>
+
+									<p>
+										Line Construction MMC "@item.Title" vakansiyası üzrə işə qəbul elan edir!
+									</p>
+
+									<p>Son müraciət tarixi: @item.Deadline </p>
+									<hr>
+
+
+									<a asp-controller="Vacancy" asp-action="Detail" asp-route-id="@item.Id" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+								</div>
+
+							</article>
+						</div>
+					}
+				}
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+	</section><!-- /Blog Posts Section -->
+	<!-- Blog Pagination Section -->
+	@* <section id="blog-pagination" class="blog-pagination section">
+
+	<div class="container">
+	<div class="d-flex justify-content-center">
+	<ul>
+	<li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
+	<li><a href="#">1</a></li>
+	<li><a href="#" class="active">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li>...</li>
+	<li><a href="#">10</a></li>
+	<li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+	</ul>
+	</div>
+	</div>
+
+	</section><!-- /Blog Pagination Section --> *@
+
+</main>
