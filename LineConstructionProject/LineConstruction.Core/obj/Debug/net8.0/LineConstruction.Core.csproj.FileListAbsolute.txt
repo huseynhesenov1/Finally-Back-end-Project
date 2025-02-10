@@ -21,3 +21,4 @@ C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.C
 C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\refint\LineConstruction.Core.dll
 C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\LineConstruction.Core.pdb
 C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\ref\LineConstruction.Core.dll
+C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.Core\obj\Debug\net8.0\LineConstruction.Core.csproj.AssemblyReference.cache

@@ -1,7 +1,10 @@
 using LineConstruction.BLa.Profiles;
 using LineConstruction.BLa.Services.Abstractions;
 using LineConstruction.BLa.Services.Implementations;
+using LineConstruction.Core.Entities;
 using LineConstruction.DAL.ConfigrationsManager;
+using LineConstruction.DAL.Contexts;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IOurServiceService, OurServiceService>();
@@ -12,12 +15,13 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IVacancyService, VacancyService>();
 builder.Services.AddScoped<IAddedCVService, AddedCVService>();
 builder.Services.AddAutoMapper(typeof(OurServiceProfile).Assembly);
-
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt=>opt.Password.RequiredLength = 8).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddServices();
 var app = builder.Build();
 app.UseStaticFiles();
-
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllerRoute(
       name: "areas",

@@ -5,10 +5,14 @@ using Microsoft.AspNetCore.StaticFiles;
 using System.IO;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "Admin")]
+	[Authorize(Roles = "HR")]
+
 	public class CVController : Controller
 	{
 		private readonly IAddedCVService _addedCVService;
@@ -18,7 +22,7 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
 			_addedCVService = addedCVService;
 		}
 
-		// CV-lərin siyahısını göstərir
+	
 		public async Task<IActionResult> Index()
 		{
 			ICollection<AddedCV> addedCVs = await _addedCVService.GetAllAsync();

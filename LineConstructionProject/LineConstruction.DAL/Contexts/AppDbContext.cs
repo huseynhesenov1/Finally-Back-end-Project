@@ -1,10 +1,11 @@
 ﻿using LineConstruction.Core.Entities;
 using LineConstruction.DAL.ConfigrationsManager;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace LineConstruction.DAL.Contexts
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext:IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions opt) :base(opt){  }
         public DbSet<OurService> OurServices { get; set; }
