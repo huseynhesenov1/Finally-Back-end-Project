@@ -4,6 +4,7 @@ using LineConstruction.BLa.Services.Abstractions;
 using LineConstruction.BLa.Services.Implementations;
 using LineConstruction.Core.Entities;
 using LineConstruction.DAL.Contexts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "Admin")]
+
 	public class OrderController : Controller
 	{
 		private readonly IOrderService _orderService;

@@ -14,6 +14,7 @@ builder.Services.AddScoped<ICatagoryService, CatagoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IVacancyService, VacancyService>();
 builder.Services.AddScoped<IAddedCVService, AddedCVService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddAutoMapper(typeof(OurServiceProfile).Assembly);
 builder.Services.AddIdentity<AppUser, IdentityRole>(opt=>opt.Password.RequiredLength = 8).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddControllersWithViews();

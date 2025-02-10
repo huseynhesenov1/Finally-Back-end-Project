@@ -2,12 +2,15 @@
 using LineConstruction.BLa.DTOs;
 using LineConstruction.BLa.Services.Abstractions;
 using LineConstruction.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LineConstruction.MVC.Areas.Admin.Controllers;
 
 [Area("Admin")]
-	public class VacancyController : Controller
+[Authorize(Roles = "Admin")]
+
+public class VacancyController : Controller
 	{
 		private readonly IVacancyService _vacancyService;
 		private readonly IMapper _mapper;

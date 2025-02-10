@@ -3,13 +3,16 @@ using LineConstruction.BLa.DTOs;
 using LineConstruction.BLa.Services.Abstractions;
 using LineConstruction.BLa.Services.Implementations;
 using LineConstruction.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class ProductController : Controller
+	[Authorize(Roles = "Admin")]
+
+	public class ProductController : Controller
     {
         private readonly IProductService _productService;
         private readonly ICatagoryService _categoryService;

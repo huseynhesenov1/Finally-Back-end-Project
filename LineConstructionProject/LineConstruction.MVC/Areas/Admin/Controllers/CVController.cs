@@ -10,8 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	[Authorize(Roles = "Admin")]
-	[Authorize(Roles = "HR")]
+	[Authorize(Roles = "Admin , HR")]
 
 	public class CVController : Controller
 	{
@@ -29,7 +28,7 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
 			return View(addedCVs);
 		}
 
-		// CV faylını yükləyən metod
+		
 		public IActionResult Download(string fileName)
 		{
 			if (string.IsNullOrEmpty(fileName))
@@ -37,23 +36,19 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
 				return BadRequest("Fayl adı göstərilməyib.");
 			}
 
-			// wwwroot/uploads içində faylı tap
 			var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "CV", fileName);
 
-			// Əgər fayl yoxdursa, NotFound qaytar
 			if (!System.IO.File.Exists(filePath))
 			{
 				return NotFound("Fayl tapılmadı!");
 			}
 
-			// MIME tipini tap (PDF, DOCX, XLSX və s. üçün)
 			var provider = new FileExtensionContentTypeProvider();
 			if (!provider.TryGetContentType(filePath, out var contentType))
 			{
-				contentType = "application/octet-stream"; // Default MIME type
+				contentType = "application/octet-stream"; 
 			}
 
-			// Faylı oxu və endir
 			var fileBytes = System.IO.File.ReadAllBytes(filePath);
 			return File(fileBytes, contentType, fileName);
 		}

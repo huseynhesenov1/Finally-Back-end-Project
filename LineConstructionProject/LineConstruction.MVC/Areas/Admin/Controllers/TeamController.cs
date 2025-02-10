@@ -3,12 +3,15 @@ using LineConstruction.BLa.DTOs;
 using LineConstruction.BLa.Services.Abstractions;
 using LineConstruction.BLa.Services.Implementations;
 using LineConstruction.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class TeamController : Controller
+	[Authorize(Roles = "Admin")]
+
+	public class TeamController : Controller
     {
         private readonly IOurTeamService _ourTeamService;
         private readonly IMapper _mapper;

@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using LineConstruction.BLa.DTOs;
+using LineConstruction.BLa.Services.Abstractions;
+using LineConstruction.BLa.Utilities;
 using LineConstruction.Core.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,17 +14,20 @@ namespace LineConstruction.MVC.Controllers
         private readonly SignInManager<AppUser> _signinmanager;
         private readonly IMapper _mapper;
         private readonly RoleManager<IdentityRole> _roleManager;
-
-        public AccountController(UserManager<AppUser> usermanager, IMapper mapper, SignInManager<AppUser> signinmanager, RoleManager<IdentityRole> roleManager)
-        {
-            _usermanager = usermanager;
-            _mapper = mapper;
-            _signinmanager = signinmanager;
-            _roleManager = roleManager;
-        }
+		private readonly IEmailService _emailService;
 
 
-        public IActionResult Register()
+		public AccountController(UserManager<AppUser> usermanager, IMapper mapper, SignInManager<AppUser> signinmanager, RoleManager<IdentityRole> roleManager, IEmailService emailService)
+		{
+			_usermanager = usermanager;
+			_mapper = mapper;
+			_signinmanager = signinmanager;
+			_roleManager = roleManager;
+			_emailService = emailService;
+		}
+
+
+		public IActionResult Register()
         {
             return View();
         }
@@ -53,7 +58,12 @@ namespace LineConstruction.MVC.Controllers
                 ModelState.AddModelError(string.Empty, "Something went wrong");
                 return View(appUserDTO);
             }
-            return RedirectToAction("Login");
+			_emailService.SendEmail(appUser.Email);
+			string userToken = await _usermanager.GenerateEmailConfirmationTokenAsync(appUser);
+			string? url = Url.Action("ConfirmEmail", "Account", new { UserId = appUser.Id, token = userToken }, Request.Scheme);
+			_emailService.SendEmailConfirm(appUser.Email, url);
+			await _usermanager.AddToRoleAsync(appUser, "Users");
+			return RedirectToAction("Login");
         }
         public IActionResult Login()
         {
@@ -74,7 +84,11 @@ namespace LineConstruction.MVC.Controllers
                 ModelState.AddModelError(string.Empty, "Not found this Account");
                 return View(appUserLoginDTO);
             }
-            var res =   await _signinmanager.PasswordSignInAsync(appUser, appUserLoginDTO.Password, true, true);
+			if (!appUser.EmailConfirmed)
+			{
+				return BadRequest("please confirm your email");
+			}
+			var res =   await _signinmanager.PasswordSignInAsync(appUser, appUserLoginDTO.Password, true, true);
             if (!res.Succeeded)
             {
                 ModelState.AddModelError(string.Empty, "Something went wrong");
@@ -87,35 +101,62 @@ namespace LineConstruction.MVC.Controllers
             await _signinmanager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+		public async Task<IActionResult> ConfirmEmail(string userId, string token)
+		{
+			if (string.IsNullOrEmpty(userId) || string.IsNullOrEmpty(token))
+			{
+				return BadRequest("Invalid email confirmation request.");
+			}
+
+			var user = await _usermanager.FindByIdAsync(userId);
+			if (user == null)
+			{
+				return NotFound("User not found.");
+			}
+
+			if (user.EmailConfirmed)
+			{
+				return RedirectToAction("Login");
+			}
+
+			var result = await _usermanager.ConfirmEmailAsync(user, token);
+			if (result.Succeeded)
+			{
+				return RedirectToAction("Login");
+			}
+
+			return BadRequest("Email confirmation failed. Please check your confirmation link.");
+		}
 
 
-        //public async Task CreateRole()
-        //{
-        //    await _roleManager.CreateAsync(new IdentityRole { Name = "Admin" });
-        //    await _roleManager.CreateAsync(new IdentityRole { Name = "Users" });
-        //    await _roleManager.CreateAsync(new IdentityRole { Name = "HR" });
-        //}
 
-        //public async Task CreateAdmin()
-        //{
-        //    AppUser appUser = new AppUser();
-        //    appUser.FirstName = "Hesenov Huseyn";
-        //    appUser.LastName = "HuseynAdmin";
-        //    appUser.UserName = "Admin";
-        //    appUser.Email = "Admin12@com";
-        //    await _usermanager.CreateAsync(appUser, "Admin123!");
-        //    await _usermanager.AddToRoleAsync(appUser, "Admin");
-        //}
+		//public async Task CreateRole()
+		//{
+		//    await _roleManager.CreateAsync(new IdentityRole { Name = "Admin" });
+		//    await _roleManager.CreateAsync(new IdentityRole { Name = "Users" });
+		//    await _roleManager.CreateAsync(new IdentityRole { Name = "HR" });
+		//}
 
-        //public async Task CreateHR()
-        //{
-        //    AppUser appUser = new AppUser();
-        //    appUser.FirstName = "Hesenov Huseyn";
-        //    appUser.LastName = "HuseynHR";
-        //    appUser.UserName = "HR";
-        //    appUser.Email = "HR1245@com";
-        //    await _usermanager.CreateAsync(appUser, "Hr12345!");
-        //    await _usermanager.AddToRoleAsync(appUser, "HR");
-        //}
-    }
+		//public async Task CreateAdmin()
+		//{
+		//    AppUser appUser = new AppUser();
+		//    appUser.FirstName = "Hesenov Huseyn";
+		//    appUser.LastName = "HuseynAdmin";
+		//    appUser.UserName = "Admin";
+		//    appUser.Email = "Admin12@com";
+		//    await _usermanager.CreateAsync(appUser, "Admin123!");
+		//    await _usermanager.AddToRoleAsync(appUser, "Admin");
+		//}
+
+		//public async Task CreateHR()
+		//{
+		//    AppUser appUser = new AppUser();
+		//    appUser.FirstName = "Hesenov Huseyn";
+		//    appUser.LastName = "HuseynHR";
+		//    appUser.UserName = "HR";
+		//    appUser.Email = "HR1245@com";
+		//    await _usermanager.CreateAsync(appUser, "Hr12345!");
+		//    await _usermanager.AddToRoleAsync(appUser, "HR");
+		//}
+	}
 }
