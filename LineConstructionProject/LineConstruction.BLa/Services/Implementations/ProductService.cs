@@ -41,6 +41,20 @@ namespace LineConstruction.BLa.Services.Implementations
 			return await _productReadRepository.GetAllAsync(true, "Catagory");
 
 		}
+		public async Task<ICollection<Product>> SearchProductsAsync(string search)
+		{
+			var query = await _productReadRepository.GetAllAsync(false, "Catagory");
+
+			if (!string.IsNullOrEmpty(search))
+			{
+				query = query
+					.Where(p => p.Title.Contains(search, StringComparison.OrdinalIgnoreCase) ||
+								p.Description.Contains(search, StringComparison.OrdinalIgnoreCase))
+					.ToList();
+			}
+
+			return query;
+		}
 
 		public async Task<Product> GetByIdAsync(int id)
 		{

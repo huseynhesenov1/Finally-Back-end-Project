@@ -339,6 +339,28 @@ namespace LineConstruction.DAL.Migrations
                     b.ToTable("OurTeams");
                 });
 
+            modelBuilder.Entity("LineConstruction.Core.Entities.Plaster", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("CementPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("SandPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WorkerSalaryForArea")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Plasters");
+                });
+
             modelBuilder.Entity("LineConstruction.Core.Entities.Product", b =>
                 {
                     b.Property<int>("Id")

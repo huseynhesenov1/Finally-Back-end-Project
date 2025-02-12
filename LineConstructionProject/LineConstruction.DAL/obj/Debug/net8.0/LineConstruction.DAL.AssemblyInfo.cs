@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LineConstruction.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9043a54cbdf468100624a770b1cecc509eb01c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5022a7aecfa20c6acca5b21c5bdf5c09ffccf605")]
 [assembly: System.Reflection.AssemblyProductAttribute("LineConstruction.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LineConstruction.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

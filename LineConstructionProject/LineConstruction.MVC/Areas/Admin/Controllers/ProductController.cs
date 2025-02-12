@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-	[Authorize(Roles = "Admin")]
+	//[Authorize(Roles = "Admin")]
 
 	public class ProductController : Controller
     {

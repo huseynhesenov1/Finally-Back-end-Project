@@ -13,9 +13,19 @@ namespace LineConstruction.MVC.Controllers
 			_productService = productService;
 		}
 
-		public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index(string search)
 		{
-			ICollection<Product> products = await  _productService.GetAllAsync();
+			ICollection<Product> products;
+
+			if (!string.IsNullOrEmpty(search))
+			{
+				products = await _productService.SearchProductsAsync(search);
+			}
+			else
+			{
+				products = await _productService.GetAllAsync();
+			}
+
 			return View(products);
 		}
 	}

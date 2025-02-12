@@ -2,7 +2,9 @@
 using LineConstruction.BLa.Services.Abstractions;
 using LineConstruction.BLa.ViewModels;
 using LineConstruction.Core.Entities;
+using LineConstruction.DAL.Migrations;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGeneration.Design;
 
 namespace LineConstruction.MVC.Controllers
 {
@@ -30,13 +32,33 @@ namespace LineConstruction.MVC.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Index(VacancyVM vacancyVM)
 		{
-			await _addedCVService.CreateAsync(vacancyVM.AddedCVCreateDTO);
-			return RedirectToAction("Index");
+            if (!ModelState.IsValid)
+            {
+				ModelState.AddModelError(string.Empty, "Modelstate is not Valid");
+				return View(vacancyVM);
+            }
+			try
+			{
+				await _addedCVService.CreateAsync(vacancyVM.AddedCVCreateDTO);
+				return RedirectToAction("Index");
+			}
+			catch
+			{
+				return View(vacancyVM);
+			}
 		}
 		public async Task<IActionResult> Detail(int id)
 		{
-			Vacancy vacancy = await _vacancyService.GetByIdAsync(id);
-			return View(vacancy);
+			try
+			{
+				Vacancy vacancy = await _vacancyService.GetByIdAsync(id);
+				return View(vacancy);
+			}
+			catch
+			{
+				return RedirectToAction("Error");
+			}
+			
 		}
 	}
 }
