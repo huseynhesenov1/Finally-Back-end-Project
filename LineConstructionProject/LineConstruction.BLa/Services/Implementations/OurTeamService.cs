@@ -23,13 +23,18 @@ namespace LineConstruction.BLa.Services.Implementations
 
         public async Task<OurTeam> CreateAsync(OurTeamDTO ourTeamDTO)
         {
+            if (ourTeamDTO.ImagePath == null || !ourTeamDTO.ImagePath.IsValidFile())
+            {
+                throw new Exception("Invalid file type or size");
+            }
+
             OurTeam ourTeam = _mapper.Map<OurTeam>(ourTeamDTO);
             ourTeam.CreateAt = DateTime.Now;
             ourTeam.ImagePath = await ourTeamDTO.ImagePath.SaveAsync("Teams");
+
             var res = await _ourTeamWriteRepo.CreateAsync(ourTeam);
             await _ourTeamWriteRepo.SaveChangeAsync();
             return res;
-
         }
         public async Task<OurTeam> UpdateAsync(OurTeamUpdateDTO ourTeamUpdateDTO)
         {

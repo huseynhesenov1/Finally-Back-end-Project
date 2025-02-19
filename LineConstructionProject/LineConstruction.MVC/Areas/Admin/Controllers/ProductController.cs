@@ -45,10 +45,20 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
 
                 return View(productCreateDTO);
             }
-            ViewBag.Catagory = new SelectList(await _categoryService.GetAllAsync(), "Id", "Title");
+           
+            try
+            {
+                await _productService.CreateAsync(productCreateDTO);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Catagory = new SelectList(await _categoryService.GetAllAsync(), "Id", "Title");
 
-            await _productService.CreateAsync(productCreateDTO);
+                ModelState.AddModelError("ImagePath", ex.Message);
+                return View(productCreateDTO);
+            }
             return RedirectToAction("Index");
+
         }
         public async Task<IActionResult> Update(int id)
         {

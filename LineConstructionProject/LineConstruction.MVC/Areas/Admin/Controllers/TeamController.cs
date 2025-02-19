@@ -65,19 +65,30 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Create()
         {
             ViewBag.Service = new SelectList(await _ourServiceService.GetAllAsync(), "Id", "Title");
-
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(OurTeamDTO ourTeamDTO)
         {
             if (!ModelState.IsValid)
             {
                 ViewBag.Service = new SelectList(await _ourServiceService.GetAllAsync(), "Id", "Title");
-                ModelState.AddModelError(string.Empty, "Modelsate is not Valid");
+                ModelState.AddModelError(string.Empty, "ModelState is not valid");
                 return View(ourTeamDTO);
             }
-            await _ourTeamService.CreateAsync(ourTeamDTO);
+
+            try
+            {
+                await _ourTeamService.CreateAsync(ourTeamDTO);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Service = new SelectList(await _ourServiceService.GetAllAsync(), "Id", "Title");
+                ModelState.AddModelError("ImagePath", ex.Message);
+                return View(ourTeamDTO);
+            }
+
             return RedirectToAction("Index");
         }
         public async Task<IActionResult> Recycle()

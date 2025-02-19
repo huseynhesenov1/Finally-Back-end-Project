@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LineConstruction.BLa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5cb3726089be861749d4f406986aa659e3f690b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df19a383350492ab15f9386463711edf05425a6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("LineConstruction.BLa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LineConstruction.BLa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

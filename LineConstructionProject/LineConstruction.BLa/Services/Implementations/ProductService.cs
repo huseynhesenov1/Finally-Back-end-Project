@@ -22,7 +22,11 @@ namespace LineConstruction.BLa.Services.Implementations
 
 		public async Task<Product> CreateAsync(ProductCreateDTO productCreateDTO)
 		{
-			Product product = _mapper.Map<Product>(productCreateDTO);
+            if (productCreateDTO.ImagePath == null || !productCreateDTO.ImagePath.IsValidFile())
+            {
+                throw new Exception("Invalid file type or size");
+            }
+            Product product = _mapper.Map<Product>(productCreateDTO);
 			product.CreateAt = DateTime.Now;
 			product.ImagePath = await productCreateDTO.ImagePath.SaveAsync("Product");
 			var res = await _productWriteRepository.CreateAsync(product);
