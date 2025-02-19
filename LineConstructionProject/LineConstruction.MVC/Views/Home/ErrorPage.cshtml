@@ -1,0 +1,59 @@
+﻿@{
+	ViewData["Title"] = "Xəta baş verdi";
+}
+
+<style>
+	th, td {
+		border: 1px solid black;
+		padding: 10px;
+	}
+
+	.page-title {
+		background: url(/assets/img/page-title-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 160px 0 60px 0;
+		text-align: center;
+		position: relative;
+	}
+
+		.page-title:before {
+			content: "";
+			background-color: rgba(0, 0, 0, 0.4);
+			position: absolute;
+			inset: 0;
+		}
+</style>
+
+<div class="page-title">
+	<div class="container position-relative">
+		<h1 style="color: white">Error Page</h1>
+		<nav class="breadcrumbs">
+			<ol>
+				<li><a asp-controller="Home" asp-action="Index">Home</a></li>
+				<li style="color: white" class="current">/ Error Page</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+
+<h1>Xəta @ViewBag.ErrorCode</h1>
+
+@if (ViewBag.ErrorCode == 404)
+{
+	<p>Bağışlayın, axtardığınız səhifə tapılmadı.</p>
+	<a asp-action="Index">Ana səhifəyə qayıt</a>
+}
+else if (ViewBag.ErrorCode == 500)
+{
+	<p>Bağışlayın, serverdə bir xəta baş verdi.</p>
+	<p>Zəhmət olmasa sonra yenidən cəhd edin.</p>
+}
+else
+{
+	<p>Bağışlayın, naməlum bir xəta baş verdi.</p>
+}
+
+

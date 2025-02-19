@@ -2049,6 +2049,7 @@ wwwroot\uploads\Product\fc598706-a050-4e0a-ad6a-5bc9903b9508drel.jpg
 wwwroot\uploads\Teams\25aa746b-91c8-4b51-88af-0eaeea0587ediki.png
 wwwroot\uploads\Teams\32ba78df-2f22-4733-b77a-236d71c479ffWhatsApp Image 2023-10-07 at 18.48.35.jpeg
 wwwroot\uploads\Teams\3eb062e8-05db-44c1-abd7-968ca97a5e26linkdn.jpeg
+wwwroot\uploads\Teams\461f06ff-65c5-4dea-8b1f-a9f3a1863b88drel.jpg
 wwwroot\uploads\Teams\65157cb4-21c3-4c20-bc48-c735625dd6b7huse.jpeg
 wwwroot\uploads\Teams\77928f8d-0c3a-4da9-9e9e-a84d45e3c5e0image (11).png
 wwwroot\uploads\Teams\a4c484a8-0407-4100-9cc7-ac13a0f57991image (11).png

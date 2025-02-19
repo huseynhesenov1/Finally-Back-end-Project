@@ -21,6 +21,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddServices();
 var app = builder.Build();
 app.UseStaticFiles();
+app.UseExceptionHandler("/Home/ErrorPage"); 
+app.UseStatusCodePagesWithRedirects("/Home/ErrorPage?code={0}"); 
 app.UseAuthentication();
 app.UseAuthorization();
 

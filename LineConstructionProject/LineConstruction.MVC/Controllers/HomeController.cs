@@ -8,5 +8,15 @@ namespace LineConstruction.MVC.Controllers
         {
             return View();
         }
+        public IActionResult ErrorPage(int? code = null)
+        {
+            if (code == null)
+            {
+                code = 500; 
+            }
+
+            ViewBag.ErrorCode = code;
+            return View();
+        }
     }
 }
