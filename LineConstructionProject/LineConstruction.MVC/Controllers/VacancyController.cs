@@ -1,9 +1,11 @@
 ﻿using LineConstruction.BLa.DTOs;
 using LineConstruction.BLa.Services.Abstractions;
+using LineConstruction.BLa.Services.Implementations;
 using LineConstruction.BLa.ViewModels;
 using LineConstruction.Core.Entities;
 using LineConstruction.DAL.Migrations;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.VisualStudio.Web.CodeGeneration.Design;
 
 namespace LineConstruction.MVC.Controllers
@@ -22,6 +24,9 @@ namespace LineConstruction.MVC.Controllers
 		public async Task<IActionResult> Index()
 		{
 			ICollection<Vacancy> vacancies = await _vacancyService.GetAllAsync();
+			ViewBag.Vacancy = new SelectList(await _vacancyService.GetAllAsync(), "Id", "Title");
+
+
 			VacancyVM vacancyVM = new VacancyVM()
 			{
 				Vacancies = vacancies,
@@ -35,6 +40,8 @@ namespace LineConstruction.MVC.Controllers
             if (!ModelState.IsValid)
             {
 				ModelState.AddModelError(string.Empty, "Modelstate is not Valid");
+				ViewBag.Vacancy = new SelectList(await _vacancyService.GetAllAsync(), "Id", "Title");
+
 				return View(vacancyVM);
             }
 			try

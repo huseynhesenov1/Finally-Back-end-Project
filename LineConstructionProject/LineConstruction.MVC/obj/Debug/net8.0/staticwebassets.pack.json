@@ -8097,6 +8097,30 @@
       "PackagePath": "staticwebassets\\smeta\\bunovre.png"
     },
     {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\smeta\\bunovre2.png",
+      "PackagePath": "staticwebassets\\smeta\\bunovre2.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\smeta\\damDordYanli.png",
+      "PackagePath": "staticwebassets\\smeta\\damDordYanli.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\smeta\\download",
+      "PackagePath": "staticwebassets\\smeta"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\smeta\\horgu.png",
+      "PackagePath": "staticwebassets\\smeta\\horgu.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\smeta\\horgu2.jpg",
+      "PackagePath": "staticwebassets\\smeta\\horgu2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\smeta\\horgu3.jpg",
+      "PackagePath": "staticwebassets\\smeta\\horgu3.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\smeta\\suvaq.png",
       "PackagePath": "staticwebassets\\smeta\\suvaq.png"
     },
@@ -8109,8 +8133,20 @@
       "PackagePath": "staticwebassets\\uploads\\CV\\108be759-b734-4b39-9387-07c055f9aeb9drel.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\CV\\19d4a0e7-9879-4076-88e8-af6afe961848ilk.png",
+      "PackagePath": "staticwebassets\\uploads\\CV\\19d4a0e7-9879-4076-88e8-af6afe961848ilk.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\CV\\3dfa0922-7787-40e4-ba8f-0665c414d5afimage (2).png",
+      "PackagePath": "staticwebassets\\uploads\\CV\\3dfa0922-7787-40e4-ba8f-0665c414d5afimage (2).png"
+    },
+    {
       "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\CV\\5d0a23d3-3616-4b95-b11c-94c4e17480153e3e3e3e3.docx",
       "PackagePath": "staticwebassets\\uploads\\CV\\5d0a23d3-3616-4b95-b11c-94c4e17480153e3e3e3e3.docx"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\CV\\7f3a1d0a-c5c1-48f1-983a-bbbb9fa5d431drel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\CV\\7f3a1d0a-c5c1-48f1-983a-bbbb9fa5d431drel.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\CV\\ac953c29-4c43-4184-ad6d-0140b9e55dd73e3e3e3e3.docx",
@@ -8125,8 +8161,16 @@
       "PackagePath": "staticwebassets\\uploads\\CV\\c16f25a0-82b3-4b83-a98f-4485aa72a8493e3e3e3e3.docx"
     },
     {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\CV\\c58d0e57-2240-43b3-a197-c6a8d08e3776kod_cevirme.doc",
+      "PackagePath": "staticwebassets\\uploads\\CV\\c58d0e57-2240-43b3-a197-c6a8d08e3776kod_cevirme.doc"
+    },
+    {
       "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\CV\\d5d40763-335d-4039-ad19-8d6b1eea5b3e3e3e3e3e3.docx",
       "PackagePath": "staticwebassets\\uploads\\CV\\d5d40763-335d-4039-ad19-8d6b1eea5b3e3e3e3e3e3.docx"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\CV\\e13ec154-5e96-442b-939e-057f666e1024kod_cevirme.doc",
+      "PackagePath": "staticwebassets\\uploads\\CV\\e13ec154-5e96-442b-939e-057f666e1024kod_cevirme.doc"
     },
     {
       "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Product\\2b36f8ee-aa88-4aff-832e-a19b1859b856drel2.png",
@@ -8149,12 +8193,20 @@
       "PackagePath": "staticwebassets\\uploads\\Product\\fc598706-a050-4e0a-ad6a-5bc9903b9508drel.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\25aa746b-91c8-4b51-88af-0eaeea0587ediki.png",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\25aa746b-91c8-4b51-88af-0eaeea0587ediki.png"
+    },
+    {
       "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\32ba78df-2f22-4733-b77a-236d71c479ffWhatsApp Image 2023-10-07 at 18.48.35.jpeg",
       "PackagePath": "staticwebassets\\uploads\\Teams\\32ba78df-2f22-4733-b77a-236d71c479ffWhatsApp Image 2023-10-07 at 18.48.35.jpeg"
     },
     {
       "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\3eb062e8-05db-44c1-abd7-968ca97a5e26linkdn.jpeg",
       "PackagePath": "staticwebassets\\uploads\\Teams\\3eb062e8-05db-44c1-abd7-968ca97a5e26linkdn.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\65157cb4-21c3-4c20-bc48-c735625dd6b7huse.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\65157cb4-21c3-4c20-bc48-c735625dd6b7huse.jpeg"
     },
     {
       "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\77928f8d-0c3a-4da9-9e9e-a84d45e3c5e0image (11).png",
@@ -8173,8 +8225,12 @@
       "PackagePath": "staticwebassets\\uploads\\Teams\\d45e4e55-9529-4e60-b8e8-dccb416fa9efimage (7).png"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\dedd4403-0600-4770-acf2-489878f1482fimage (11).png",
-      "PackagePath": "staticwebassets\\uploads\\Teams\\dedd4403-0600-4770-acf2-489878f1482fimage (11).png"
+      "Id": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\wwwroot\\uploads\\Teams\\f2d04ca9-667a-4732-b83f-df29ed5e751alagonda.png",
+      "PackagePath": "staticwebassets\\uploads\\Teams\\f2d04ca9-667a-4732-b83f-df29ed5e751alagonda.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LineConstruction.MVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LineConstruction.MVC.Microsoft.AspNetCore.StaticWebAssets.props",

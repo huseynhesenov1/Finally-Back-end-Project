@@ -2028,7 +2028,7 @@
         },
         "runtime": {
           "LineConstruction.BLa.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -2039,7 +2039,7 @@
         },
         "runtime": {
           "LineConstruction.Core.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -2054,7 +2054,7 @@
         },
         "runtime": {
           "LineConstruction.DAL.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

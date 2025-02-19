@@ -5,6 +5,7 @@ using LineConstruction.BLa.Services.Implementations;
 using LineConstruction.Core.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
@@ -14,12 +15,14 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
 	public class TeamController : Controller
     {
         private readonly IOurTeamService _ourTeamService;
+        private readonly IOurServiceService _ourServiceService;
         private readonly IMapper _mapper;
 
-        public TeamController(IOurTeamService ourTeamService, IMapper mapper)
+        public TeamController(IOurTeamService ourTeamService, IMapper mapper, IOurServiceService ourServiceService)
         {
             _ourTeamService = ourTeamService;
             _mapper = mapper;
+            _ourServiceService = ourServiceService;
         }
 
         public async Task<IActionResult> Index()
@@ -33,6 +36,7 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
             {
                 OurTeam ourTeam = await _ourTeamService.GetByIdAsync(id);
                 OurTeamUpdateDTO ourTeamUpdateDTO = _mapper.Map<OurTeamUpdateDTO>(ourTeam);
+                ViewBag.Service = new SelectList(await _ourServiceService.GetAllAsync(), "Id", "Title");
                 return View(ourTeamUpdateDTO);
             }
             catch (Exception ex)
@@ -40,7 +44,7 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
                 return RedirectToAction("Error");
             }
         }
-
+        
         [HttpPost]
         public async Task<IActionResult> Update(OurTeamUpdateDTO ourTeamUpdateDTO)
         {
@@ -58,8 +62,10 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
 
 
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            ViewBag.Service = new SelectList(await _ourServiceService.GetAllAsync(), "Id", "Title");
+
             return View();
         }
         [HttpPost]
@@ -67,6 +73,7 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid)
             {
+                ViewBag.Service = new SelectList(await _ourServiceService.GetAllAsync(), "Id", "Title");
                 ModelState.AddModelError(string.Empty, "Modelsate is not Valid");
                 return View(ourTeamDTO);
             }

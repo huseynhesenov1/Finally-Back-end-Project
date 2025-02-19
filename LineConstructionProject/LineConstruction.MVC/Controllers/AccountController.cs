@@ -127,36 +127,66 @@ namespace LineConstruction.MVC.Controllers
 
 			return BadRequest("Email confirmation failed. Please check your confirmation link.");
 		}
+		public IActionResult ChangePassword()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordDTO changePasswordDTO)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError(string.Empty, "Modelstate Valid deyil");
+                return View(changePasswordDTO);
+            }
+            if (changePasswordDTO.ConfirmPassword != changePasswordDTO.NewPassword)
+            {
+                ModelState.AddModelError(string.Empty, "ConfirmPassword ile New Password eyni olmalidir");
+                return View(changePasswordDTO);
+            }
+            AppUser?  user=  await _usermanager.FindByNameAsync(changePasswordDTO.UserName);
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, "Hesab tapilmadi");
+                return View(changePasswordDTO);
+            }
+            var res = await _usermanager.ChangePasswordAsync(user, changePasswordDTO.CurrentPassword, changePasswordDTO.NewPassword);
+            if (!res.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty, "Hesab tapilmadi");
+                return View(changePasswordDTO);
+            }
+            return RedirectToAction("Login");
+        }
 
+        //public async Task CreateRole()
+        //{
+        //    await _roleManager.CreateAsync(new IdentityRole { Name = "Admin" });
+        //    await _roleManager.CreateAsync(new IdentityRole { Name = "Users" });
+        //    await _roleManager.CreateAsync(new IdentityRole { Name = "HR" });
+        //}
 
-		//public async Task CreateRole()
-		//{
-		//    await _roleManager.CreateAsync(new IdentityRole { Name = "Admin" });
-		//    await _roleManager.CreateAsync(new IdentityRole { Name = "Users" });
-		//    await _roleManager.CreateAsync(new IdentityRole { Name = "HR" });
-		//}
+        //public async Task CreateAdmin()
+        //{
+        //    AppUser appUser = new AppUser();
+        //    appUser.FirstName = "Hesenov Huseyn";
+        //    appUser.LastName = "HuseynAdmin";
+        //    appUser.UserName = "Admin";
+        //    appUser.Email = "Admin12@com";
+        //    await _usermanager.CreateAsync(appUser, "Admin123!");
+        //    await _usermanager.AddToRoleAsync(appUser, "Admin");
+        //}
 
-		//public async Task CreateAdmin()
-		//{
-		//    AppUser appUser = new AppUser();
-		//    appUser.FirstName = "Hesenov Huseyn";
-		//    appUser.LastName = "HuseynAdmin";
-		//    appUser.UserName = "Admin";
-		//    appUser.Email = "Admin12@com";
-		//    await _usermanager.CreateAsync(appUser, "Admin123!");
-		//    await _usermanager.AddToRoleAsync(appUser, "Admin");
-		//}
-
-		//public async Task CreateHR()
-		//{
-		//    AppUser appUser = new AppUser();
-		//    appUser.FirstName = "Hesenov Huseyn";
-		//    appUser.LastName = "HuseynHR";
-		//    appUser.UserName = "HR";
-		//    appUser.Email = "HR1245@com";
-		//    await _usermanager.CreateAsync(appUser, "Hr12345!");
-		//    await _usermanager.AddToRoleAsync(appUser, "HR");
-		//}
-	}
+        //public async Task CreateHR()
+        //{
+        //    AppUser appUser = new AppUser();
+        //    appUser.FirstName = "Hesenov Huseyn";
+        //    appUser.LastName = "HuseynHR";
+        //    appUser.UserName = "HR";
+        //    appUser.Email = "HR1245@com";
+        //    await _usermanager.CreateAsync(appUser, "Hr12345!");
+        //    await _usermanager.AddToRoleAsync(appUser, "HR");
+        //}
+    }
 }

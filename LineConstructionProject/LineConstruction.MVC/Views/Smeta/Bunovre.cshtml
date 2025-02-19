@@ -1,0 +1,147 @@
+﻿@using LineConstruction.BLa.DTOs.SmetaDTO
+@model FoundationDTO
+
+
+@{
+    var betonHecmi = ViewBag.BetonHecmi ?? 0;
+    var betonQiymeti = ViewBag.BetonQiymeti ?? 0;
+    var armaturQiymeti = ViewBag.ArmaturQiymeti ?? 0;
+    var armaturHecmi = ViewBag.ArmaturHecmi ?? 0;
+    var xamitHecmi = ViewBag.XamitHecmi ?? 0;
+    var xamitQiymeti = ViewBag.XamitQiymeti ?? 0;
+    var qazmaQiymeti = ViewBag.QazmaQiymeti ?? 0;
+    var qazmaHecmi = ViewBag.QazmaHecmi ?? 0;
+    var karkazHecmi = ViewBag.KarkazHecmi ?? 0;
+    var karkazQiymeti = ViewBag.KarkazQiymeti ?? 0;
+    var betonIsQiymeti = ViewBag.BetonIsQiymeti ?? 0;
+    var betonIsHecmi = ViewBag.BetonIsHecmi ?? 0;
+
+}
+
+<style>
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+     .page-title {
+        background: url(/assets/img/page-title-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 160px 0 60px 0;
+        text-align: center;
+        position: relative;
+    }
+
+        .page-title:before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            inset: 0;
+        } 
+</style>
+
+<div class="page-title">
+    <div class="container position-relative">
+        <h1 style="color: white">Bunovre</h1>
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li style="color: white" class="current">Bunovre</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center mt-5" style="flex-direction: column; width:40%;">
+    <img height="250px" width="100%" src="~/smeta/bunovre2.png" />
+
+    <form method="post">
+        <div class="mb-3">
+            <h5>Kənar qazıntının (perimetr) uzunluğu (m):</h5>
+            <input asp-for="OuterPerimetr" type="number" step="any" name="OuterPerimetr" placeholder="m" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <h5>Xəndəyin eni (sm) :</h5>
+            <input asp-for="OuterTrenchWidth" type="number" step="any" name="OuterTrenchWidth" placeholder="sm" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <h5>Xəndəyin dərinliyi (sm):</h5>
+            <input asp-for="OuterTrenchDepth" type="number" step="any" name="OuterTrenchDepth" placeholder="sm" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <h5>Daxili qazıntının uzunluğu (m):</h5>
+            <input asp-for="InternalPerimetr" type="number" step="any" name="InternalPerimetr" placeholder="m" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <h5>Xəndəyin eni (sm):</h5>
+            <input asp-for="InternalTrenchWidth" type="number" step="any" name="InternalTrenchWidth" placeholder="sm" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <h5>Xəndəyin dərinliyi (sm): </h5>
+            <input asp-for="InternalTrenchDepth" type="number" step="any" name="InternalTrenchDepth" placeholder="sm" class="form-control" required />
+        </div>
+        <div>
+            <span class="text-danger">@Html.ValidationSummary()</span>
+        </div>
+
+        <button type="submit" class="btn btn-warning mb-3">Hesabla</button>
+    </form>
+
+    @if (betonHecmi > 0)
+    {
+        <h5 class="mt-3">Ümumi xərc: @(betonQiymeti + armaturQiymeti + xamitQiymeti + qazmaQiymeti + karkazQiymeti + betonIsQiymeti) </h5>
+        <table style="border-collapse: collapse; border: 1px solid black" class="mt-4 mb-5">
+            <tr>
+                <th>Material</th>
+                <th>Miqdar</th>
+                <th>Vahid</th>
+                <th>Qiymət</th>
+            </tr>
+            <tr>
+                <td>Beton həcmi</td>
+                <td>@betonHecmi</td>
+                <td>m<sup>3</sup></td>
+                <td>@betonQiymeti</td>
+            </tr>
+            <tr>
+                <td>Armatur</td>
+                <td>@armaturHecmi</td>
+                <td>m</td>
+                <td>@armaturQiymeti</td>
+            </tr>
+            <tr>
+                <td>Xamıt</td>
+                <td>@xamitHecmi</td>
+                <td>ədəd</td>
+                <td>@xamitQiymeti</td>
+            </tr>
+            <tr>
+                <th>İş</th>
+                <th>İş həcmi</th>
+                <th>Vahid</th>
+                <th>Qiymət</th>
+            </tr>
+            <tr>
+                <td>Qazma</td>
+                <td>@qazmaHecmi</td>
+                <td>m<sup>3</sup></td>
+                <td>@qazmaQiymeti</td>
+            </tr>
+            <tr>
+                <td>Karkas toxunması</td>
+                <td>@karkazHecmi</td>
+                <td>m</td>
+                <td>@karkazQiymeti</td>
+            </tr>
+            <tr>
+                <td>Beton tökülməsi</td>
+                <td>@betonIsHecmi</td>
+                <td>m</td>
+                <td>@betonIsQiymeti</td>
+            </tr>
+        </table>
+    }
+</div>

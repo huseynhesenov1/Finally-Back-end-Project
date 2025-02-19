@@ -16,6 +16,9 @@ namespace LineConstruction.DAL.Contexts
         public DbSet<Vacancy> Vacancies { get; set; }
         public DbSet<AddedCV> AddedCVs { get; set; }
         public DbSet<Plaster> Plasters { get; set; }
+        public DbSet<Foundation> Foundations { get; set; }
+        public DbSet<Masonry> Masonries { get; set; }
+        public DbSet<Roof> Roofs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 			foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))

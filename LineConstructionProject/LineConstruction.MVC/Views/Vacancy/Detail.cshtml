@@ -1,19 +1,36 @@
 ﻿@using LineConstruction.Core.Entities
 @model Vacancy
+<style>
+    
+    .page-title {
+        background: url(/assets/img/page-title-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 160px 0 60px 0;
+        text-align: center;
+        position: relative;
+    }
 
-<main class="main">
-	<div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
-		<div class="container position-relative">
-			<h1>Vacancy</h1>
-			<nav class="breadcrumbs">
-				<ol>
-					<li><a asp-controller="Home" asp-action="Index">Home</a></li>
-
-					<li class="current">Vacancy</li>
-				</ol>
-			</nav>
-		</div>
-	</div>
+        .page-title:before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            inset: 0;
+        }
+</style>
+<main>
+<div class="page-title">
+    <div class="container position-relative">
+            <h1 style="color: white">Vacancy</h1>
+        <nav class="breadcrumbs">
+            <ol>
+                    <li><a asp-controller="Vacancy" asp-action="Index">Home</a></li>
+                <li style="color: white" class="current">Vacancy</li>
+            </ol>
+        </nav>
+    </div>
+</div>
 <div class="container mt-4 mb-4">
 	<div style="border: 1px solid black ; border-radius : 20px;padding: 50px;" class="card">
 

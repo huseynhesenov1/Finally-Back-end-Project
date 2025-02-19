@@ -123,23 +123,38 @@
 		color: rgba(156, 163, 175, 1);
 	}
 
+	.page-title {
+		background: url(/assets/img/page-title-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 160px 0 60px 0;
+		text-align: center;
+		position: relative;
+	}
+
+		.page-title:before {
+			content: "";
+			background-color: rgba(0, 0, 0, 0.4);
+			position: absolute;
+			inset: 0;
+		}
+
+
+
 </style>
-
-<main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
-        <div class="container position-relative">
-			<h1>Login</h1>
-            <nav class="breadcrumbs">
-                <ol>
-                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-
-					<li class="current">Login</li>
-                </ol>
-            </nav>
-        </div>
-    </div><!-- End Page Title -->
+<main>
+	<div class="page-title">
+		<div class="container position-relative">
+			<h1 style="color: white">Login</h1>
+			<nav class="breadcrumbs">
+				<ol>
+					<li><a asp-controller="Home" asp-action="Index">Home</a></li>
+					<li style="color: white" class="current">Login</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
     <!-- About Section -->
     <div class="container d-flex align-items-center justify-content-center mt-4 mb-4">
         
@@ -152,7 +167,7 @@
 					<div class="input-group">
 						<input type="password" name="password" id="password" asp-for="Password">
 						<div class="forgot">
-							<a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+							<a rel="noopener noreferrer" asp-action="ChangePassword">Change Password</a>
 						</div>
 					</div>
 				<div>

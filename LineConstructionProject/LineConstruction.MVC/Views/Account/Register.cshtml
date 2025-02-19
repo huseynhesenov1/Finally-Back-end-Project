@@ -1,7 +1,6 @@
 ﻿@using LineConstruction.BLa.DTOs
 @model AppUserDTO
 <style>
-    /* From Uiverse.io by ammarsaa */ 
 .form {
   display: flex;
   flex-direction: column;
@@ -23,7 +22,7 @@
   display: flex;
   align-items: center;
   padding-left: 30px;
-  color: #00bfff;
+  color:  #feb900;
 }
 
 .title::before {
@@ -45,7 +44,7 @@
   width: 16px;
   border-radius: 50%;
   left: 0px;
-  background-color: #00bfff;
+            background-color: #feb900;
 }
 
 .message, 
@@ -127,27 +126,42 @@
 .submit:hover {
   background-color: #00bfff96;
 }
+
+    .page-title {
+        background: url(/assets/img/page-title-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 160px 0 60px 0;
+        text-align: center;
+        position: relative;
+    }
+
+        .page-title:before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            inset: 0;
+        }
 </style>
 
-<main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+<main>
+    <div class="page-title">
         <div class="container position-relative">
-            <h1>Register</h1>
+            <h1 style="color: white">Register</h1>
             <nav class="breadcrumbs">
                 <ol>
                     <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-
-                    <li class="current">Register</li>
+                    <li style="color: white" class="current">Register</li>
                 </ol>
             </nav>
         </div>
-    </div><!-- End Page Title -->
-    <!-- About Section -->
+    </div>
+    
     <div class="container d-flex align-items-center justify-content-center mt-4 mb-4">
         <form class="form" method="post">
-            <p class="title">Register </p>
+            <p style="color: #feb900;" class="title">Register </p>
             <p class="message">Signup now and get full access to our app. </p>
             <div class="flex">
                 <label>
@@ -175,13 +189,8 @@
             <div>
                 <span class="text-danger">@Html.ValidationSummary()</span>
             </div>
-            <button class="submit">Submit</button>
+            <button style="background-color: #feb900;" class="submit">Submit</button>
             <p class="signin">Already have an acount ? <a asp-action="Login">Signin</a> </p>
         </form>
     </div>
-
-
-                   
-   
-
 </main>

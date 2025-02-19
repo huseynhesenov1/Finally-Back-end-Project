@@ -25,6 +25,8 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.MVC
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Catagory/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0YWdvcnlcQ3JlYXRlLmNzaHRtbA==
@@ -50,8 +52,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0YWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/CV/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ1ZcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/CV/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ1ZcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/CV/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ1ZcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/CV/Recycle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ1ZcUmVjeWNsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Areas/Admin/Views/Home/Index.cshtml]
@@ -190,6 +204,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -232,6 +250,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Smeta/Bunovre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21ldGFcQnVub3ZyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Smeta/Dam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21ldGFcRGFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Smeta/Horgu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21ldGFcSG9yZ3UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ACER/Desktop/Finally Project/LineConstructionProject/LineConstruction.MVC/Views/Smeta/Index.cshtml]

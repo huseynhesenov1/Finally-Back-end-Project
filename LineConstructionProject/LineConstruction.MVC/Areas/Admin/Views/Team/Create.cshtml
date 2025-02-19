@@ -20,9 +20,12 @@
             <input asp-for="ImagePath" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             <span class="text-danger" asp-validation-for="ImagePath"></span>
         </div>
-        <div class="mb-3">
-            <input asp-for="OurServiceId" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <span class="text-danger" asp-validation-for="OurServiceId"></span>
+        <div class="form-group">
+            <label asp-for="OurServiceId" class="control-label"></label>
+            <select asp-for="OurServiceId" class="form-control" asp-items="ViewBag.Service">
+                <option hidden value="">-- Select Teams --</option>
+            </select>
+            <span asp-validation-for="OurServiceId" class="text-danger"></span>
         </div>
         <div>
             <span class="text-danger">@Html.ValidationSummary()</span>

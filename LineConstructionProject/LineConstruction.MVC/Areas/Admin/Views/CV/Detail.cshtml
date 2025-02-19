@@ -1,0 +1,59 @@
+﻿@using LineConstruction.Core.Entities
+@model AddedCV
+
+<div class="container-fluid">
+	<h1 class="h3 mb-2 text-gray-800">Services Table</h1>
+	<div class="card shadow mb-4">
+		<div class="card-header py-3">
+			<h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+		</div>
+		<div class="card-body">
+			<div class="table-responsive">
+				<a asp-action="Recycle" class="btn btn-warning mb-4 ml-3">Recycle Bin</a>
+				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Title</th>
+							<th>CVPath</th>
+							<th>IsDeleted</th>
+							<th>CreateAt</th>
+							<th>Download</th>
+							<th>SoftDelete</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+							<tr>
+								<td>@Model.Id</td>
+							<td>@Model.Vacancy.Title</td>
+							<td>@Model.CvPath</td>
+							<td>@Model.IsDeleted</td>
+							<td>@Model.CreateAt</td>
+								<td>
+								@if (!string.IsNullOrEmpty(Model.CvPath))
+									{
+									<a asp-action="Download" asp-controller="CV" asp-route-fileName="@Model.CvPath" class="btn btn-primary">
+											Download
+										</a>
+									}
+									else
+									{
+										<span class="text-muted">No File</span>
+									}
+								</td>
+								<td>
+								<a asp-area="Admin" asp-controller="CV" asp-action="SoftDelete" asp-route-id="@Model.Id" class="btn btn-danger">SoftDelete</a>
+								</td>
+								<td>
+								<a asp-area="Admin" asp-controller="CV" asp-action="Detail" asp-route-id="@Model.Id" class="btn btn-info">Details</a>
+								</td>
+							</tr>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

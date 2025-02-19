@@ -2,7 +2,8 @@
 {
 	public class AddedCV : BaseEntity
 	{
-		public string Title { get; set; }
+		public Vacancy Vacancy { get ; set; }
+		public int VacancyId { get; set; }
 		public string CvPath { get; set; }
 	}
 }

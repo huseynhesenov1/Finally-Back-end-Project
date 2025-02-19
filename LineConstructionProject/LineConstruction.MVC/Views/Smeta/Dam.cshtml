@@ -1,0 +1,122 @@
+﻿@using LineConstruction.BLa.DTOs.SmetaDTO
+@model RoofDTO
+
+
+@{
+	var betonHecmi = ViewBag.BetonHecmi ?? 0;
+
+}
+
+<style>
+	th, td {
+	border: 1px solid black;
+	padding: 10px;
+	}
+
+	.page-title {
+	background: url(/assets/img/page-title-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 160px 0 60px 0;
+	text-align: center;
+	position: relative;
+	}
+
+	.page-title:before {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	inset: 0;
+	}
+</style>
+
+<div class="page-title">
+	<div class="container position-relative">
+		<h1 style="color: white">Dam</h1>
+		<nav class="breadcrumbs">
+			<ol>
+				<li><a asp-controller="Home" asp-action="Index">Home</a></li>
+				<li style="color: white" class="current">Dam</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<div class="container d-flex justify-content-center mt-5" style="flex-direction: column; width:40%;">
+	<img height="250px" width="100%" src="~/smeta/damDordYanli.png" />
+
+	<form method="post">
+		<div class="mb-3">
+			<h5>Evin uzunluğu(m):</h5>
+			<input asp-for="LengthHouse" type="number" step="any" placeholder="m" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Evin eni:(m) :</h5>
+			<input asp-for="WidthHouse" type="number" step="any" placeholder="m" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Damın hündürlüyü(m):</h5>
+			<input asp-for="RoofHeight" type="number" step="any" placeholder="m" class="form-control" required />
+		</div>
+
+
+		<div>
+			<span class="text-danger">@Html.ValidationSummary()</span>
+		</div>
+
+		<button type="submit" class="btn btn-warning mb-3">Hesabla</button>
+	</form>
+
+	@if (ViewBag.SiferQiymet > 0)
+	{
+
+
+		<h5 class="mt-3">Ümumi xərc:  @(ViewBag.SiferQiymet + ViewBag.DampolQiymet + ViewBag.YivQiymet + ViewBag.YivQiymet + ViewBag.ReykaQiymet + ViewBag.DamQurulmaQiymet)</h5>
+		<table style="border-collapse: collapse; border: 1px solid black" class="mt-4 mb-5">
+			<tr>
+			<th>Material</th>
+			<th>Miqdar</th>
+			<th>Vahid</th>
+			<th>Qiymət</th>
+		</tr>
+		<tr>
+			<td>Dam örtüyü</td>
+			<td>@ViewBag.SiferSahesi</td>
+			<td>m<sup>2</sup></td>
+			<td>@ViewBag.SiferQiymet</td>
+		</tr>
+		<tr>
+			<td>Bel tili örtüyü</td>
+			<td>@ViewBag.Dampol</td>
+			<td>m</td>
+			<td>@ViewBag.DampolQiymet</td>
+		</tr>
+		<tr>
+			<td>Yiv (şurup)</td>
+			<td>@ViewBag.YivQutu</td>
+			<td>qutu</td>
+			<td>@ViewBag.YivQiymet</td>
+		</tr>
+		<tr>
+			<td>Reyka</td>
+			<td>@ViewBag.ReykaMiqdar</td>
+			<td>m</td>
+			<td>@ViewBag.ReykaQiymet</td>
+		</tr>
+		<tr>
+			<th>İş</th>
+			<th>İş həcmi</th>
+			<th>Vahid</th>
+			<th>Qiymət</th>
+		</tr>
+		<tr>
+			<td>Dam örtüyü</td>
+			<td> @ViewBag.DamSahesi</td>
+			<td>m<sup>2</sup></td>
+			<td>@ViewBag.DamQurulmaQiymet</td> 
+		</tr>
+		
+	</table>
+	}
+</div>

@@ -11,3 +11,5 @@ build_property.RootNamespace = LineConstruction.Core
 build_property.ProjectDir = C:\Users\ACER\Desktop\Finally Project\LineConstructionProject\LineConstruction.Core\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

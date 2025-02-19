@@ -7,7 +7,7 @@ namespace LineConstruction.BLa.DTOs
 	{
 		[Required]
 		[Display(Prompt = "Subject")]
-		public string Title { get; set; }
+		public int VacancyId { get; set; }
 		[Required]
 		[Display(Prompt = "CvPath")]
 		public IFormFile CvPath { get; set; }

@@ -49,17 +49,18 @@ namespace LineConstruction.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime?>("UpdateAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UpdateBy")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("VacancyId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("VacancyId");
 
                     b.ToTable("AddedCVs");
                 });
@@ -173,6 +174,62 @@ namespace LineConstruction.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Catagories");
+                });
+
+            modelBuilder.Entity("LineConstruction.Core.Entities.Foundation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("ArmaturePrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("ConcretePrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("ConcretePriceEmployer")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("DrillingPriceEmployer")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("KhamitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("KhamitPriceEmployer")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Foundations");
+                });
+
+            modelBuilder.Entity("LineConstruction.Core.Entities.Masonry", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("CementPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("SandPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("StonePrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WorkerSalary")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Masonries");
                 });
 
             modelBuilder.Entity("LineConstruction.Core.Entities.Order", b =>
@@ -418,6 +475,34 @@ namespace LineConstruction.DAL.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("LineConstruction.Core.Entities.Roof", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("NailPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("ReykaPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("RoofingPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WoodPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("WorkerSalaryForArea")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roofs");
+                });
+
             modelBuilder.Entity("LineConstruction.Core.Entities.Vacancy", b =>
                 {
                     b.Property<int>("Id")
@@ -603,6 +688,17 @@ namespace LineConstruction.DAL.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("LineConstruction.Core.Entities.AddedCV", b =>
+                {
+                    b.HasOne("LineConstruction.Core.Entities.Vacancy", "Vacancy")
+                        .WithMany("AddedCVs")
+                        .HasForeignKey("VacancyId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Vacancy");
+                });
+
             modelBuilder.Entity("LineConstruction.Core.Entities.Order", b =>
                 {
                     b.HasOne("LineConstruction.Core.Entities.OurService", "OurService")
@@ -710,6 +806,11 @@ namespace LineConstruction.DAL.Migrations
             modelBuilder.Entity("LineConstruction.Core.Entities.OurTeam", b =>
                 {
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("LineConstruction.Core.Entities.Vacancy", b =>
+                {
+                    b.Navigation("AddedCVs");
                 });
 #pragma warning restore 612, 618
         }

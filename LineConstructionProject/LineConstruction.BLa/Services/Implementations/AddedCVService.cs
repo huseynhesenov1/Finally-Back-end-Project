@@ -33,18 +33,18 @@ namespace LineConstruction.BLa.Services.Implementations
 
 		public async Task<ICollection<AddedCV>> GetAllAsync()
 		{
-			return await _addedCVReadRepository.GetAllAsync(false);
+			return await _addedCVReadRepository.GetAllAsync(false, "Vacancy");
 		}
 
 		public async Task<ICollection<AddedCV>> GetAllDeletedAsync()
 		{
-			return await _addedCVReadRepository.GetAllAsync(true);
+			return await _addedCVReadRepository.GetAllAsync(true, "Vacancy");
 
 		}
 
 		public async Task<AddedCV> GetByIdAsync(int id)
 		{
-			AddedCV addedCV = await _addedCVReadRepository.GetByIdAsync(id, false);
+			AddedCV addedCV = await _addedCVReadRepository.GetByIdAsync(id, false, "Vacancy");
 			if (addedCV is null)
 			{
 				throw new Exception("Bu Id ye uygun deyer tapilmadi");
@@ -54,7 +54,7 @@ namespace LineConstruction.BLa.Services.Implementations
 
 		public async Task<AddedCV> RestoreAsync(int id)
 		{
-			AddedCV addedCV = await _addedCVReadRepository.GetByIdAsync(id, true);
+			AddedCV addedCV = await _addedCVReadRepository.GetByIdAsync(id, true, "Vacancy");
 			if (addedCV is null)
 			{
 				throw new Exception("Bu Id ye uygun deyer tapilmadi");
@@ -66,7 +66,7 @@ namespace LineConstruction.BLa.Services.Implementations
 
 		public async Task<AddedCV> SoftDeleteAsync(int id)
 		{
-			AddedCV addedCV = await _addedCVReadRepository.GetByIdAsync(id, true);
+			AddedCV addedCV = await _addedCVReadRepository.GetByIdAsync(id, true, "Vacancy");
 			if (addedCV is null)
 			{
 				throw new Exception("Bu Id ye uygun deyer tapilmadi");

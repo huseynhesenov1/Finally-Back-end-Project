@@ -1,0 +1,181 @@
+﻿@using LineConstruction.BLa.DTOs.SmetaDTO
+@model MasonryDTO
+
+@{
+	var totalEmployer = ViewBag.TotalEmployerSingle ?? 0;
+	var totalEmployerPlural = ViewBag.TotalEmployerPlural ?? 0;
+	var netWallArea = ViewBag.NetWallArea ?? 0;
+
+	var countStonePluralPrice = ViewBag.CountStonePluralPrice ?? 0;
+	var countStoneSinglePrice = ViewBag.CountStoneSinglePrice ?? 0;
+	var countStonePlural = ViewBag.CountStonePlural ?? 0;
+	var countStoneSingle = ViewBag.CountStoneSingle ?? 0;
+
+
+	var countSandSingle = ViewBag.CountSandSingle ?? 0;
+	var sandSinglePrice = ViewBag.SandSinglePrice ?? 0;
+	var countSandPlural = ViewBag.CountSandPlural ?? 0;
+	var sandPluralPrice = ViewBag.SandPluralPrice ?? 0;
+
+
+	var countCementPluralPrice = ViewBag.CountCementPluralPrice ?? 0;
+	var countCementSinglePrice = ViewBag.CountCementSinglePrice ?? 0;
+	var countCementSingle = ViewBag.CountCementSingle ?? 0;
+	var countCementPlural = ViewBag.CountCementPlural ?? 0;
+}
+
+
+<style>
+	th, td {
+		border: 1px solid black;
+		padding: 10px;
+	}
+
+	.page-title {
+		background: url(/assets/img/page-title-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 160px 0 60px 0;
+		text-align: center;
+		position: relative;
+	}
+
+		.page-title:before {
+			content: "";
+			background-color: rgba(0, 0, 0, 0.4);
+			position: absolute;
+			inset: 0;
+		}
+</style>
+
+<div class="page-title">
+	<div class="container position-relative">
+		<h1 style="color: white">Hörgü</h1>
+		<nav class="breadcrumbs">
+			<ol>
+				<li><a asp-controller="Home" asp-action="Index">Home</a></li>
+				<li style="color: white" class="current">Hörgü</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<div class="container d-flex justify-content-center mt-5" style="flex-direction: column; width:40%;">
+	<img height="250px" width="100%" src="~/smeta/horgu2.jpg" />
+
+	<form method="post">
+		<div class="mb-3">
+			<h5>Divarların uzunluqları cəmi: (m):</h5>
+			<input asp-for="LengthWalls" type="number" placeholder="m" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Divarın hündürlüyü :</h5>
+			<input asp-for="HeightWalls" type="number" placeholder="m" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Qapı sayı:</h5>
+			<input asp-for="CountDoors" type="number" placeholder="ədəd" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Qapının eni:</h5>
+			<input asp-for="WidthDoors" type="number" placeholder="sm" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Qapının hündürlüyü:</h5>
+			<input asp-for="HeightDoors" type="number" placeholder="sm" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Pəncərə sayı:</h5>
+			<input asp-for="CountWindows" type="number" placeholder="ədəd" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Pəncərənin eni:</h5>
+			<input asp-for="WidthWindows" type="number" placeholder="sm" class="form-control" required />
+		</div>
+		<div class="mb-3">
+			<h5>Pəncərənin hündürlüyü:</h5>
+			<input asp-for="HeightWindows" type="number" placeholder="sm" class="form-control" required />
+		</div>
+		<div>
+			<span class="text-danger">@Html.ValidationSummary()</span>
+		</div>
+
+		<button type="submit" class="btn btn-warning mb-3">Hesabla</button>
+	</form>
+
+	@if (countStoneSingle != 0)
+	{
+		<h5 class="mt-3">Ümumi xərc (Tək Daş): @(countStoneSinglePrice + countCementSinglePrice + sandSinglePrice + totalEmployer) AZN</h5>
+		<h5 class="mt-3">Ümumi xərc (Cüt Daş): @(countStonePluralPrice + countCementPluralPrice + sandPluralPrice + totalEmployerPlural) AZN</h5>
+
+		<table style="border-collapse: collapse; border: 1px solid black" class="mt-4 mb-5">
+			<tr>
+				<th>Material  (Tək Daş)</th>
+				<th>Miqdar</th>
+				<th>Vahid</th>
+				<th>Qiymət</th>
+			</tr>
+			<tr>
+				<td> Daş</td>
+				<td>@countStoneSingle</td>
+				<td>ədəd</td>
+				<td>@countStoneSinglePrice</td>
+			</tr>
+			<tr>
+				<td>Sement</td>
+				<td>@countCementSingle</td>
+				<td>ədəd</td>
+				<td>@countCementSinglePrice</td>
+			</tr>
+			<tr>
+				<td>Qum </td>
+				<td>@countSandSingle</td>
+				<td>ədəd</td>
+				<td>@sandSinglePrice</td>
+			</tr>
+			<tr>
+				<th>Material (Cüt Daş)</th>
+				<th>Miqdar</th>
+				<th>Vahid</th>
+				<th>Qiymət</th>
+			</tr>
+			<tr>
+				<td> Daş</td>
+				<td>@countStonePlural</td>
+				<td>ədəd</td>
+				<td>@countStonePluralPrice</td>
+			</tr>
+			<tr>
+				<td>Sement </td>
+				<td>@countCementPlural</td>
+				<td>ədəd</td>
+				<td>@countCementPluralPrice</td>
+			</tr>
+			<tr>
+				<td>Qum</td>
+				<td>@countSandPlural</td>
+				<td>ədəd</td>
+				<td>@sandPluralPrice</td>
+			</tr>
+			<tr>
+				<th>İş</th>
+				<th>İş həcmi</th>
+				<th>Vahid</th>
+				<th>Qiymət</th>
+			</tr>
+			<tr>
+				<td>Hörgü (Tək Daş)</td>
+				<td>@netWallArea </td>
+				<td>m<sup>2</sup></td>
+				<td>@totalEmployer</td>
+			</tr>
+			<tr>
+				<td>Hörgü (Cüt Daş)</td>
+				<td>@netWallArea </td>
+				<td>m<sup>2</sup></td>
+				<td>@totalEmployerPlural</td>
+			</tr>
+		</table>
+	}
+</div>
