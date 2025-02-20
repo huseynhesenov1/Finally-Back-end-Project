@@ -10,9 +10,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-	//[Authorize(Roles = "Admin")]
+	[Authorize(Roles = "Admin")]
 
-	public class ProductController : Controller
+    public class ProductController : Controller
     {
         private readonly IProductService _productService;
         private readonly ICatagoryService _categoryService;
@@ -53,7 +53,6 @@ namespace LineConstruction.MVC.Areas.Admin.Controllers
             catch (Exception ex)
             {
                 ViewBag.Catagory = new SelectList(await _categoryService.GetAllAsync(), "Id", "Title");
-
                 ModelState.AddModelError("ImagePath", ex.Message);
                 return View(productCreateDTO);
             }

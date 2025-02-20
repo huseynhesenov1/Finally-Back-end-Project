@@ -1,3 +1,4 @@
+using LineConstruction.BLa.DTOs;
 using LineConstruction.BLa.Profiles;
 using LineConstruction.BLa.Services.Abstractions;
 using LineConstruction.BLa.Services.Implementations;
@@ -19,6 +20,13 @@ builder.Services.AddAutoMapper(typeof(OurServiceProfile).Assembly);
 builder.Services.AddIdentity<AppUser, IdentityRole>(opt=>opt.Password.RequiredLength = 8).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddServices();
+string? chatId = builder.Configuration.GetSection("TelegramLog")["ChatId"];  
+string? botToken = builder.Configuration.GetSection("TelegramLog")["BotToken"];
+if (chatId == null || botToken == null)
+{
+    throw new Exception("Bot has problem");
+}
+builder.Services.AddSingleton(new TelegramLogService(chatId, botToken, new HttpClient()));
 var app = builder.Build();
 app.UseStaticFiles();
 app.UseExceptionHandler("/Home/ErrorPage"); 

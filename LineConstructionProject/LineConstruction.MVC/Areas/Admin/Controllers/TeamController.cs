@@ -10,9 +10,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-	//[Authorize(Roles = "Admin")]
+	[Authorize(Roles = "Admin")]
 
-	public class TeamController : Controller
+    public class TeamController : Controller
     {
         private readonly IOurTeamService _ourTeamService;
         private readonly IOurServiceService _ourServiceService;

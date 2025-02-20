@@ -8,8 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	//[Authorize(Roles = "Admin, HR")]
-	
+	[Authorize(Roles = "Admin, HR")]
+
 	public class HomeController : Controller
 	{
 		

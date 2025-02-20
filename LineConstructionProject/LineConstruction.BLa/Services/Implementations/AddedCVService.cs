@@ -23,15 +23,19 @@ namespace LineConstruction.BLa.Services.Implementations
 
 		public async Task<AddedCV> CreateAsync(AddedCVCreateDTO addedCVCreateDTO)
 		{
-			AddedCV addedCV = _mapper.Map<AddedCV>(addedCVCreateDTO);
-			addedCV.CreateAt = DateTime.Now;
-			addedCV.CvPath = await addedCVCreateDTO.CvPath.SaveAsync("CV");
-			var res = await _addedCVWriteRepository.CreateAsync(addedCV);
-			await _addedCVWriteRepository.SaveChangeAsync();
-			return res;
+            if (addedCVCreateDTO.CvPath == null || !addedCVCreateDTO.CvPath.IsValidFile())
+            {
+                throw new Exception("Invalid file type or size");
+            }
+            AddedCV addedCV = _mapper.Map<AddedCV>(addedCVCreateDTO);
+            addedCV.CreateAt = DateTime.Now;
+            addedCV.CvPath = await addedCVCreateDTO.CvPath.SaveAsync("CV");
+            var res = await _addedCVWriteRepository.CreateAsync(addedCV);
+            await _addedCVWriteRepository.SaveChangeAsync();
+            return res;
 		}
 
-		public async Task<ICollection<AddedCV>> GetAllAsync()
+        public async Task<ICollection<AddedCV>> GetAllAsync()
 		{
 			return await _addedCVReadRepository.GetAllAsync(false, "Vacancy");
 		}

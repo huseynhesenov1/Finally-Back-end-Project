@@ -11,7 +11,7 @@ using LineConstruction.BLa.Services.Implementations;
 namespace LineConstruction.MVC.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	//[Authorize(Roles = "Admin , HR")]
+	[Authorize(Roles = "Admin , HR")]
 
 	public class CVController : Controller
 	{

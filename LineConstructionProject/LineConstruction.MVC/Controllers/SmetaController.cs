@@ -1,4 +1,5 @@
 ﻿using LineConstruction.BLa.DTOs.SmetaDTO;
+using LineConstruction.BLa.Services.Implementations;
 using LineConstruction.Core.Entities;
 using LineConstruction.DAL.Contexts;
 using Microsoft.AspNetCore.Mvc;
@@ -9,10 +10,11 @@ namespace LineConstruction.MVC.Controllers
     public class SmetaController : Controller
     {
         private readonly AppDbContext _context;
-
-        public SmetaController(AppDbContext context)
+        private readonly TelegramLogService _telegramLogService;
+        public SmetaController(AppDbContext context, TelegramLogService telegramLogService)
         {
             _context = context;
+            _telegramLogService = telegramLogService;
         }
         public IActionResult Index() { return View(); }
         public IActionResult Suvaq()
@@ -64,7 +66,7 @@ namespace LineConstruction.MVC.Controllers
             ViewBag.QumQiymeti = qumQiymeti;
             ViewBag.QumMiqdari = qumMiqdari;
             ViewBag.IsinHecmi = isinhecmi;
-
+            await _telegramLogService.LogAsync($"Suvaqin qiymeti hesablandi {(User.Identity?.Name != null ? $"{User.Identity.Name} terefinden " : "")} {DateTime.UtcNow.AddHours(4)}");
             return View(model);
         }
         public IActionResult Bunovre()
@@ -73,19 +75,19 @@ namespace LineConstruction.MVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Bunovre(decimal OuterPerimetr, decimal OuterTrenchWidth, decimal OuterTrenchDepth,
+        public async Task<IActionResult> Bunovre(decimal OuterPerimetr, decimal OuterTrenchWidth, decimal OuterTrenchDepth,
                                      decimal InternalPerimetr, decimal InternalTrenchWidth, decimal InternalTrenchDepth)
         {
-            if (OuterPerimetr<0 || OuterTrenchDepth<0 || OuterTrenchWidth<0 || InternalPerimetr<0 || InternalTrenchDepth<0 || InternalTrenchWidth<0)
+            if (OuterPerimetr < 0 || OuterTrenchDepth < 0 || OuterTrenchWidth < 0 || InternalPerimetr < 0 || InternalTrenchDepth < 0 || InternalTrenchWidth < 0)
             {
                 ModelState.AddModelError(string.Empty, "Ölçüləri düzgün daxil edin. Uzunluq mənfi ola bilməz");
                 return View();
             }
             decimal betonHecmi = Math.Round(
      (OuterPerimetr * 0.01m * OuterTrenchWidth * 0.01m * OuterTrenchDepth) +
-     (InternalPerimetr * 0.01m * InternalTrenchWidth * 0.01m * InternalTrenchDepth),  2  );
+     (InternalPerimetr * 0.01m * InternalTrenchWidth * 0.01m * InternalTrenchDepth), 2);
 
-            decimal armaturHecmi = Math.Round( (OuterPerimetr) + (InternalPerimetr), 2 );
+            decimal armaturHecmi = Math.Round((OuterPerimetr) + (InternalPerimetr), 2);
             decimal xamitHecmi = Math.Round(armaturHecmi * 3, 0, MidpointRounding.AwayFromZero);
 
             decimal karkazHecmi = Math.Round((OuterPerimetr) + (InternalPerimetr), 2);
@@ -122,7 +124,7 @@ namespace LineConstruction.MVC.Controllers
 ? Math.Round(qazmaHecmi * foundation.DrillingPriceEmployer, 2)
 : 0;
 
-       
+
             ViewBag.ArmaturHecmi = armaturHecmi;
             ViewBag.BetonHecmi = betonHecmi;
             ViewBag.BetonQiymeti = betonQiymeti;
@@ -135,6 +137,9 @@ namespace LineConstruction.MVC.Controllers
             ViewBag.KarkazHecmi = karkazHecmi;
             ViewBag.BetonIsHecmi = betonIsHecmi;
             ViewBag.BetonIsQiymeti = betonIsQiymeti;
+            await _telegramLogService.LogAsync(
+     $"Bunovre qiymeti hesablandi {(User.Identity?.Name != null ? $"{User.Identity.Name} terefinden " : "")}{DateTime.UtcNow.AddHours(4)}"
+ );
 
             return View();
         }
@@ -147,7 +152,7 @@ namespace LineConstruction.MVC.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Horgu(MasonryDTO masonryDTO)
+        public async Task<IActionResult> Horgu(MasonryDTO masonryDTO)
         {
             if (!ModelState.IsValid)
             {
@@ -156,55 +161,59 @@ namespace LineConstruction.MVC.Controllers
             }
 
             decimal totalWallArea = masonryDTO.LengthWalls * masonryDTO.HeightWalls;
-                decimal totalDoorArea = masonryDTO.CountDoors * masonryDTO.WidthDoors * masonryDTO.HeightDoors * 0.01m * 0.01m;
-                decimal totalWindowArea = masonryDTO.CountWindows * masonryDTO.WidthWindows * masonryDTO.HeightWindows * 0.01m * 0.01m;
-                decimal netWallArea = (totalWallArea - totalDoorArea - totalWindowArea);
-            if (netWallArea<=0)
+            decimal totalDoorArea = masonryDTO.CountDoors * masonryDTO.WidthDoors * masonryDTO.HeightDoors * 0.01m * 0.01m;
+            decimal totalWindowArea = masonryDTO.CountWindows * masonryDTO.WidthWindows * masonryDTO.HeightWindows * 0.01m * 0.01m;
+            decimal netWallArea = (totalWallArea - totalDoorArea - totalWindowArea);
+            if (netWallArea <= 0)
             {
                 ModelState.AddModelError(string.Empty, "Sahe menfi ola bilmez, Ölçüleri düzgün daxil edin");
                 return View(masonryDTO);
 
             }
             decimal countStoneSingle = Math.Ceiling(netWallArea * 12.5m);
-                decimal countStonePlural = Math.Ceiling(netWallArea * 12.5m);
+            decimal countStonePlural = Math.Ceiling(netWallArea * 12.5m);
 
-                decimal countCementSingle = Math.Ceiling(countStoneSingle * 0.0125m);
-                decimal countCementPlural = Math.Ceiling(countStonePlural * 0.0250m);
-                decimal countSandSingle = countCementSingle * 0.25m;
-                decimal countSandPlural = countCementPlural * 0.5m;
-            
-                var masonry = _context.Masonries.FirstOrDefault();
-                if (masonry != null)
-                {
-                    decimal countStoneSinglePrice = Math.Ceiling(countStoneSingle * masonry.StonePrice);
-                    decimal countStonePluralPrice = Math.Ceiling(countStonePlural * masonry.StonePrice);
-                    decimal countCementSinglePrice = Math.Ceiling(countCementSingle * masonry.CementPrice);
-                    decimal countCementPluralPrice = Math.Ceiling(countCementPlural * masonry.CementPrice);
-                    decimal totalEmployerSingle = Math.Ceiling(netWallArea * masonry.WorkerSalary);
-                    decimal totalEmployerPlural = Math.Ceiling(netWallArea * masonry.WorkerSalary * 2);
-                    decimal sandSinglePrice = Math.Ceiling(countSandSingle * masonry.SandPrice);
-                    decimal sandPluralPrice = Math.Ceiling(countSandPlural * masonry.SandPrice);
+            decimal countCementSingle = Math.Ceiling(countStoneSingle * 0.0125m);
+            decimal countCementPlural = Math.Ceiling(countStonePlural * 0.0250m);
+            decimal countSandSingle = countCementSingle * 0.25m;
+            decimal countSandPlural = countCementPlural * 0.5m;
 
-                    ViewBag.TotalEmployerSingle = totalEmployerSingle;
-                    ViewBag.TotalEmployerPlural = totalEmployerPlural;
-                    ViewBag.NetWallArea = netWallArea;
+            var masonry = _context.Masonries.FirstOrDefault();
+            if (masonry != null)
+            {
+                decimal countStoneSinglePrice = Math.Ceiling(countStoneSingle * masonry.StonePrice);
+                decimal countStonePluralPrice = Math.Ceiling(countStonePlural * masonry.StonePrice);
+                decimal countCementSinglePrice = Math.Ceiling(countCementSingle * masonry.CementPrice);
+                decimal countCementPluralPrice = Math.Ceiling(countCementPlural * masonry.CementPrice);
+                decimal totalEmployerSingle = Math.Ceiling(netWallArea * masonry.WorkerSalary);
+                decimal totalEmployerPlural = Math.Ceiling(netWallArea * masonry.WorkerSalary * 2);
+                decimal sandSinglePrice = Math.Ceiling(countSandSingle * masonry.SandPrice);
+                decimal sandPluralPrice = Math.Ceiling(countSandPlural * masonry.SandPrice);
 
-                    ViewBag.CountStoneSingle = countStoneSingle;
-                    ViewBag.CountStonePlural = countStonePlural;
-                    ViewBag.CountStoneSinglePrice = countStoneSinglePrice;
-                    ViewBag.CountStonePluralPrice = countStonePluralPrice;
+                ViewBag.TotalEmployerSingle = totalEmployerSingle;
+                ViewBag.TotalEmployerPlural = totalEmployerPlural;
+                ViewBag.NetWallArea = netWallArea;
 
-                    ViewBag.CountCementPluralPrice = countCementPluralPrice;
-                    ViewBag.CountCementSinglePrice = countCementSinglePrice;
-                    ViewBag.CountCementSingle = countCementSingle;
-                    ViewBag.CountCementPlural = countCementPlural;
+                ViewBag.CountStoneSingle = countStoneSingle;
+                ViewBag.CountStonePlural = countStonePlural;
+                ViewBag.CountStoneSinglePrice = countStoneSinglePrice;
+                ViewBag.CountStonePluralPrice = countStonePluralPrice;
 
-                    ViewBag.CountSandPlural = countSandPlural;
-                    ViewBag.CountSandSingle = countSandSingle;
-                    ViewBag.SandSinglePrice = sandSinglePrice;
-                    ViewBag.SandPluralPrice = sandPluralPrice;
-                }
-            
+                ViewBag.CountCementPluralPrice = countCementPluralPrice;
+                ViewBag.CountCementSinglePrice = countCementSinglePrice;
+                ViewBag.CountCementSingle = countCementSingle;
+                ViewBag.CountCementPlural = countCementPlural;
+
+                ViewBag.CountSandPlural = countSandPlural;
+                ViewBag.CountSandSingle = countSandSingle;
+                ViewBag.SandSinglePrice = sandSinglePrice;
+                ViewBag.SandPluralPrice = sandPluralPrice;
+            }
+            await _telegramLogService.LogAsync(
+     $"Horgu qiymeti hesablandi {(User.Identity?.Name != null ? $"{User.Identity.Name} terefinden " : "")}{DateTime.UtcNow.AddHours(4)}"
+ );
+
+
             return View(masonryDTO);
         }
 
@@ -213,7 +222,7 @@ namespace LineConstruction.MVC.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Dam(RoofDTO roofDTO)
+        public async  Task<IActionResult> Dam(RoofDTO roofDTO)
         {
             if (!ModelState.IsValid)
             {
@@ -248,6 +257,10 @@ namespace LineConstruction.MVC.Controllers
             ViewBag.ReykaQiymet = reykaQiymet;
             ViewBag.YivQiymet = yivQiymet;
             ViewBag.DamQurulmaQiymet = damQurulmaQiymet;
+            await _telegramLogService.LogAsync(
+    $"Dam qiymeti hesablandi {(User.Identity?.Name != null ? $"{User.Identity.Name} terefinden " : "")}{DateTime.UtcNow.AddHours(4)}"
+);
+
             return View(roofDTO);
         }
     }

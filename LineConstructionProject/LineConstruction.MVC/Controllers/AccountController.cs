@@ -167,6 +167,7 @@ namespace LineConstruction.MVC.Controllers
         //    await _roleManager.CreateAsync(new IdentityRole { Name = "HR" });
         //}
 
+
         //public async Task CreateAdmin()
         //{
         //    AppUser appUser = new AppUser();
@@ -174,9 +175,11 @@ namespace LineConstruction.MVC.Controllers
         //    appUser.LastName = "HuseynAdmin";
         //    appUser.UserName = "Admin";
         //    appUser.Email = "Admin12@com";
+        //    appUser.EmailConfirmed = true;
         //    await _usermanager.CreateAsync(appUser, "Admin123!");
         //    await _usermanager.AddToRoleAsync(appUser, "Admin");
         //}
+
 
         //public async Task CreateHR()
         //{
@@ -185,6 +188,7 @@ namespace LineConstruction.MVC.Controllers
         //    appUser.LastName = "HuseynHR";
         //    appUser.UserName = "HR";
         //    appUser.Email = "HR1245@com";
+        //    appUser.EmailConfirmed = true;
         //    await _usermanager.CreateAsync(appUser, "Hr12345!");
         //    await _usermanager.AddToRoleAsync(appUser, "HR");
         //}
