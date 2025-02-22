@@ -37,23 +37,24 @@
 		</nav>
 	</div>
 </div>
+<div class="container">
+
+	<h1>Xəta @ViewBag.ErrorCode</h1>
+
+	@if (ViewBag.ErrorCode == 404)
+	{
+		<p class=" mt-5">Bağışlayın, axtardığınız səhifə tapılmadı.</p>
+		<a style="text-align: center;" class="text-center mb-5" asp-action="Index">Ana səhifəyə qayıt</a>
+	}
+	else if (ViewBag.ErrorCode == 500)
+	{
+		<p class="text-center mt-5">Bağışlayın, serverdə bir xəta baş verdi.</p>
+		<p class="text-center mb-5">Zəhmət olmasa sonra yenidən cəhd edin.</p>
+	}
+	else
+	{
+		<p class="text-center mt-5">Bağışlayın, naməlum bir xəta baş verdi.</p>
+	}
 
 
-<h1>Xəta @ViewBag.ErrorCode</h1>
-
-@if (ViewBag.ErrorCode == 404)
-{
-	<p class="text-center mt-5">Bağışlayın, axtardığınız səhifə tapılmadı.</p>
-	<a class="text-center mb-5" asp-action="Index">Ana səhifəyə qayıt</a>
-}
-else if (ViewBag.ErrorCode == 500)
-{
-	<p class="text-center mt-5">Bağışlayın, serverdə bir xəta baş verdi.</p>
-	<p class="text-center mb-5">Zəhmət olmasa sonra yenidən cəhd edin.</p>
-}
-else
-{
-	<p class="text-center mt-5">Bağışlayın, naməlum bir xəta baş verdi.</p>
-}
-
-
+</div>

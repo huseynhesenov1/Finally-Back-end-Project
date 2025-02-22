@@ -138,6 +138,62 @@ namespace LineConstruction.DAL.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("LineConstruction.Core.Entities.BasketItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("OrderCheckoutId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderCheckoutId");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BasketItems");
+                });
+
             modelBuilder.Entity("LineConstruction.Core.Entities.Catagory", b =>
                 {
                     b.Property<int>("Id")
@@ -294,6 +350,46 @@ namespace LineConstruction.DAL.Migrations
                     b.HasIndex("OurTeamId");
 
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("LineConstruction.Core.Entities.OrderCheckout", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Adress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("OrderStatus")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OrderCheckouts");
                 });
 
             modelBuilder.Entity("LineConstruction.Core.Entities.OurService", b =>
@@ -457,6 +553,9 @@ namespace LineConstruction.DAL.Migrations
 
                     b.Property<decimal>("OldPrice")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -699,6 +798,32 @@ namespace LineConstruction.DAL.Migrations
                     b.Navigation("Vacancy");
                 });
 
+            modelBuilder.Entity("LineConstruction.Core.Entities.BasketItem", b =>
+                {
+                    b.HasOne("LineConstruction.Core.Entities.OrderCheckout", "OrderCheckout")
+                        .WithMany("BasketItems")
+                        .HasForeignKey("OrderCheckoutId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("LineConstruction.Core.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("LineConstruction.Core.Entities.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("OrderCheckout");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("LineConstruction.Core.Entities.Order", b =>
                 {
                     b.HasOne("LineConstruction.Core.Entities.OurService", "OurService")
@@ -794,6 +919,11 @@ namespace LineConstruction.DAL.Migrations
             modelBuilder.Entity("LineConstruction.Core.Entities.Catagory", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("LineConstruction.Core.Entities.OrderCheckout", b =>
+                {
+                    b.Navigation("BasketItems");
                 });
 
             modelBuilder.Entity("LineConstruction.Core.Entities.OurService", b =>

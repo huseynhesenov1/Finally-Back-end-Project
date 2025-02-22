@@ -1,0 +1,209 @@
+﻿@using LineConstruction.BLa.ViewModels
+
+@using LineConstruction.DAL.Contexts
+@using Microsoft.Extensions.Options
+@model CheckoutVM
+@inject IOptions<StripeSettings> Stripe
+
+<style>
+
+
+    .page-title {
+        background: url(/assets/img/page-title-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 160px 0 60px 0;
+        text-align: center;
+        position: relative;
+    }
+
+        .page-title:before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            inset: 0;
+        }
+</style>
+
+<div class="page-title">
+    <div class="container position-relative">
+        <h1 style="color: white">Checkout</h1>
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li style="color: white" class="current">/ Checkout</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<section class="h-100 h-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-8">
+                <div class="p-5">
+                    <h1 class="fw-bold mb-5">Shopping Cart</h1>
+                    <hr class="my-4">
+
+                    @foreach (var item in Model.Basket.Items)
+                    {
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <h6 class="text-muted">@item.Title</h6>
+                                <h6 class="mb-0">@item.Description</h6>
+                            </div>
+                            <div style="width: 25%;" class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                <h6 class="mb-0 item-total-price">@item.NewPrice * @item.Quantity = @(item.NewPrice * item.Quantity)</h6>
+                            </div>
+                            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                <button style="border: none; background: none;" onclick="removeFromBasket(@item.Id)" class="text-muted"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                    }
+
+                    <div class="pt-5">
+                        <h6 class="mb-0">
+                            <a asp-controller="Shop" asp-action="Index" class="text-body">
+                                <i class="fas fa-long-arrow-alt-left me-2"></i>Back to shop
+                            </a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 bg-body-tertiary">
+                <div class="mb-5">
+                    <form method="post" asp-controller="Cart" asp-action="Checkout" onchange="this.form.submit()">
+
+                        <div class="form-outline mb-5">
+                            <label class="form-label" for="form3Examplea2">Enter your Address</label>
+                            <input required asp-for="Checkout.Adress" type="text" placeholder="Write your Address" class="form-control form-control-lg" />
+                        </div>
+
+                        <script src="//checkout.stripe.com/v2/checkout.js"
+                                class="stripe-button"
+                                data-key="@Stripe.Value.Publishablekey"
+                                data-amount="@ViewBag.Total"
+                                data-name="[Deveducate]"
+                                data-locale="en"
+                                data-description="Sample charge"
+                                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                                data-zip-code="true">
+
+                        </script>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    var stripe = Stripe('@Stripe.Value.Publishablekey');
+    var elements = stripe.elements();
+    var card = elements.create('card');
+    card.mount('#card-element');
+
+    document.getElementById('payment-form').addEventListener('submit', async function (event) {
+        event.preventDefault();
+        const { paymentMethod, error } = await stripe.createPaymentMethod({
+            type: 'card',
+            card: card
+        });
+        if (error) {
+            alert(error.message);
+        } else {
+            fetch('/Cart/ProcessPayment', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ paymentMethodId: paymentMethod.id })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.clientSecret) {
+                    stripe.confirmCardPayment(data.clientSecret).then(result => {
+                        if (result.error) {
+                            alert(result.error.message);
+                        } else {
+                            alert('Payment successful!');
+                            window.location.href = '/Home/Index';
+                        }
+                    });
+                }
+            });
+        }
+    });
+</script>
+
+
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var stripeButton = document.querySelector(".stripe-button-el");
+        if (stripeButton) {
+            stripeButton.addEventListener("click", function () {
+                document.querySelector("form").submit();
+            });
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
