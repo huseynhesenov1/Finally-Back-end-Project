@@ -22,6 +22,9 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\smeta\" />
+    <Folder Include="wwwroot\uploads\CV\" />
+    <Folder Include="wwwroot\uploads\Product\" />
+    <Folder Include="wwwroot\uploads\Teams\" />
   </ItemGroup>
 
 </Project>

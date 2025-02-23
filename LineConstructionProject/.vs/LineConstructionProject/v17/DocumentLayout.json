@@ -39,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{F7764E55-3DF4-426B-A93A-1505F7C9D7E4}|LineConstruction.MVC\\LineConstruction.MVC.csproj|solutionrelative:lineconstruction.mvc\\areas\\admin\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\Migrations\\20250223191525_seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LineConstruction.DAL\\Migrations\\20250223191525_seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\desktop\\finally project\\lineconstructionproject\\lineconstruction.dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -145,6 +141,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\desktop\\finally project\\lineconstructionproject\\lineconstruction.dal\\migrations\\20250222073335_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\migrations\\20250222073335_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|c:\\users\\acer\\desktop\\finally project\\lineconstructionproject\\lineconstruction.dal\\migrations\\20250223191525_seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FF0C2DD-3D96-4054-8DE6-AF3E8A681C88}|LineConstruction.DAL\\LineConstruction.DAL.csproj|solutionrelative:lineconstruction.dal\\migrations\\20250223191525_seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -174,8 +174,7 @@
               "RelativeToolTip": "LineConstruction.BLa\\DTOs\\AddedCVCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:22:38.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T19:22:38.538Z"
             },
             {
               "$type": "Document",
@@ -187,8 +186,7 @@
               "RelativeToolTip": "LineConstruction.MVC\\Views\\Vacancy\\Index.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-23T19:22:00.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T19:22:00.653Z"
             },
             {
               "$type": "Document",
@@ -200,8 +198,7 @@
               "RelativeToolTip": "LineConstruction.MVC\\Controllers\\VacancyController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:21:56.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T19:21:56.711Z"
             },
             {
               "$type": "Document",
@@ -213,8 +210,7 @@
               "RelativeToolTip": "LineConstruction.MVC\\Views\\Cart\\OrderSuccess.cshtml",
               "ViewState": "AgIAAD4AAAAAAAAAAAAcwFkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T16:19:29.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:19:29.751Z"
             },
             {
               "$type": "Document",
@@ -226,8 +222,7 @@
               "RelativeToolTip": "LineConstruction.MVC\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAACCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-21T10:00:29.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T10:00:29.829Z"
             },
             {
               "$type": "Document",
@@ -244,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 35,
               "Title": "20250223191525_seed.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\Migrations\\20250223191525_seed.cs",
               "RelativeDocumentMoniker": "LineConstruction.DAL\\Migrations\\20250223191525_seed.cs",
@@ -252,8 +247,7 @@
               "RelativeToolTip": "LineConstruction.DAL\\Migrations\\20250223191525_seed.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:15:25.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T19:15:25.992Z"
             },
             {
               "$type": "Document",
@@ -265,8 +259,7 @@
               "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Views\\Vacancy\\Index.cshtml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-23T19:21:28.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T19:21:28.83Z"
             },
             {
               "$type": "Document",
@@ -278,12 +271,11 @@
               "RelativeToolTip": "LineConstruction.BLa\\DTOs\\VacancyDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T19:22:27.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T19:22:27.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Controllers\\CartController.cs",
@@ -291,12 +283,11 @@
               "RelativeToolTip": "LineConstruction.MVC\\Controllers\\CartController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAAADgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T10:29:44.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T10:29:44.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "LineConstruction.DAL\\Contexts\\AppDbContext.cs",
@@ -304,12 +295,11 @@
               "RelativeToolTip": "LineConstruction.DAL\\Contexts\\AppDbContext.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAiwCAAAACIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T07:17:21.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T07:17:21.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Controllers\\AccountController.cs",
@@ -317,12 +307,11 @@
               "RelativeToolTip": "LineConstruction.MVC\\Controllers\\AccountController.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAkwEAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T18:11:52.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T18:11:52.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Program.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Program.cs",
@@ -330,8 +319,7 @@
               "RelativeToolTip": "LineConstruction.MVC\\Program.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAuwCgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T10:11:47.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T10:11:47.023Z"
             },
             {
               "$type": "Document",
@@ -343,12 +331,11 @@
               "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\VacancyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T18:15:59.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T18:15:59.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "CVController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\CVController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\CVController.cs",
@@ -356,12 +343,11 @@
               "RelativeToolTip": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\CVController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T18:16:19.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T18:16:19.231Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "ErrorPage.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Views\\Home\\ErrorPage.cshtml",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Home\\ErrorPage.cshtml",
@@ -373,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Views\\Cart\\Checkout.cshtml",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Cart\\Checkout.cshtml",
@@ -385,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "StripeSettings.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\Contexts\\StripeSettings.cs",
               "RelativeDocumentMoniker": "LineConstruction.DAL\\Contexts\\StripeSettings.cs",
@@ -397,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Account\\Login.cshtml",
@@ -409,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Bunovre.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Views\\Smeta\\Bunovre.cshtml",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Smeta\\Bunovre.cshtml",
@@ -421,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "BasketItem.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\Entities\\BasketItem.cs",
               "RelativeDocumentMoniker": "LineConstruction.Core\\Entities\\BasketItem.cs",
@@ -433,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "CheckoutVM.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.BLa\\ViewModels\\CheckoutVM.cs",
               "RelativeDocumentMoniker": "LineConstruction.BLa\\ViewModels\\CheckoutVM.cs",
@@ -445,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "OrderCheckout.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\Entities\\OrderCheckout.cs",
               "RelativeDocumentMoniker": "LineConstruction.Core\\Entities\\OrderCheckout.cs",
@@ -457,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "OrderStatus.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\Enums\\OrderStatus.cs",
               "RelativeDocumentMoniker": "LineConstruction.Core\\Enums\\OrderStatus.cs",
@@ -469,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "CheckoutDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.BLa\\DTOs\\CheckoutDTO.cs",
               "RelativeDocumentMoniker": "LineConstruction.BLa\\DTOs\\CheckoutDTO.cs",
@@ -481,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "OrderDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.BLa\\DTOs\\OrderDTO.cs",
               "RelativeDocumentMoniker": "LineConstruction.BLa\\DTOs\\OrderDTO.cs",
@@ -493,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "20250222094206_checkoutadress.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\Migrations\\20250222094206_checkoutadress.cs",
               "RelativeDocumentMoniker": "LineConstruction.DAL\\Migrations\\20250222094206_checkoutadress.cs",
@@ -505,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.Core\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "LineConstruction.Core\\Entities\\Product.cs",
@@ -517,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "20250222073335_checkout.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.DAL\\Migrations\\20250222073335_checkout.cs",
               "RelativeDocumentMoniker": "LineConstruction.DAL\\Migrations\\20250222073335_checkout.cs",
@@ -529,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Views\\Cart\\Index.cshtml",
@@ -541,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "CatagoryController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\CatagoryController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\CatagoryController.cs",
@@ -553,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
@@ -565,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\OrderController.cs",
@@ -577,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "OurServiceController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\OurServiceController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\OurServiceController.cs",
@@ -589,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\ProductController.cs",
@@ -601,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "TeamController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Finally Project\\LineConstructionProject\\LineConstruction.MVC\\Areas\\Admin\\Controllers\\TeamController.cs",
               "RelativeDocumentMoniker": "LineConstruction.MVC\\Areas\\Admin\\Controllers\\TeamController.cs",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LineConstruction.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0235ab3c25f92c43dbe710e921122a73e1ee1661")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebf6f1810418df13f6bba0b74ae3ddad35c6f7ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("LineConstruction.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LineConstruction.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
