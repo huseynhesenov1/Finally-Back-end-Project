@@ -136,6 +136,42 @@ namespace LineConstruction.DAL.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "be30629f-0508-461a-8fa1-0e905705e1f5",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "0c4047ee-1b82-4f9d-a0f6-d0fbf29645a4",
+                            Email = "Admin12@lineconstruction.com",
+                            EmailConfirmed = true,
+                            FirstName = "Huseyn",
+                            LastName = "Hesenov",
+                            LockoutEnabled = false,
+                            NormalizedUserName = "ADMIN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDhCDVoC9m14RClshpPfTh7xFuGVyKwVsv6xSzAFTBW5VaEBYXr+kR9QRa1HkV3R+Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "4112fc1e-9a30-4064-818a-b66359b1bd3a",
+                            TwoFactorEnabled = false,
+                            UserName = "Admin"
+                        },
+                        new
+                        {
+                            Id = "be10629f-0508-451a-8fv1-0e905705e1f5",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "9e8ead6f-46ee-488c-aab0-22d2234e44ae",
+                            Email = "Hr12@lineconstruction.com",
+                            EmailConfirmed = true,
+                            FirstName = "Huseyn",
+                            LastName = "Hesenov",
+                            LockoutEnabled = false,
+                            NormalizedUserName = "HR",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBjPe6F97oiccYEoNlT/71DbVM+a/D05s24wUdip7OmWH0vTwYPuZAuPFJMJ640MMA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "34e9d5cb-a837-4d26-841e-7aed68b3dd84",
+                            TwoFactorEnabled = false,
+                            UserName = "HR"
+                        });
                 });
 
             modelBuilder.Entity("LineConstruction.Core.Entities.BasketItem", b =>
@@ -679,6 +715,26 @@ namespace LineConstruction.DAL.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "8aad637d-42e5-4586-a140-697cd3ee8498",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "792af7b1-45f7-4238-b547-107355540960",
+                            Name = "Users",
+                            NormalizedName = "USERS"
+                        },
+                        new
+                        {
+                            Id = "a923f5d6-8127-4f92-b34d-91f5a8c6a788",
+                            Name = "HR",
+                            NormalizedName = "HR"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -766,6 +822,18 @@ namespace LineConstruction.DAL.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "be30629f-0508-461a-8fa1-0e905705e1f5",
+                            RoleId = "8aad637d-42e5-4586-a140-697cd3ee8498"
+                        },
+                        new
+                        {
+                            UserId = "be10629f-0508-451a-8fv1-0e905705e1f5",
+                            RoleId = "a923f5d6-8127-4f92-b34d-91f5a8c6a788"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -802,8 +870,7 @@ namespace LineConstruction.DAL.Migrations
                 {
                     b.HasOne("LineConstruction.Core.Entities.OrderCheckout", "OrderCheckout")
                         .WithMany("BasketItems")
-                        .HasForeignKey("OrderCheckoutId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .HasForeignKey("OrderCheckoutId");
 
                     b.HasOne("LineConstruction.Core.Entities.Product", "Product")
                         .WithMany()
