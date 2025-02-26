@@ -1,6 +1,6 @@
 {
   "LineConnection": {
-    "MsSQL": "Server = PC\\SQLEXPRESS; Database = LineConstructionDB ; Trusted_Connection = True ; TrustServerCertificate = True"
+    "MsSQL": "Server = PC\\SQLEXPRESS; Database = LineConstructionTest3DB ; Trusted_Connection = True ; TrustServerCertificate = True"
 
   }
 }

@@ -142,16 +142,16 @@ namespace LineConstruction.DAL.Migrations
                         {
                             Id = "be30629f-0508-461a-8fa1-0e905705e1f5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0c4047ee-1b82-4f9d-a0f6-d0fbf29645a4",
+                            ConcurrencyStamp = "d7f6c273-57b2-49a1-a343-74dc3093ad2e",
                             Email = "Admin12@lineconstruction.com",
                             EmailConfirmed = true,
                             FirstName = "Huseyn",
                             LastName = "Hesenov",
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDhCDVoC9m14RClshpPfTh7xFuGVyKwVsv6xSzAFTBW5VaEBYXr+kR9QRa1HkV3R+Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJPfdRyZ6PFiuCB9bagonMaeS2VBh8rTd0ItbH6CNelo1Y1rTRh+fwCR99BSzcUNcQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4112fc1e-9a30-4064-818a-b66359b1bd3a",
+                            SecurityStamp = "784fc36a-ccef-49ba-b6e8-6d37896539c8",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         },
@@ -159,16 +159,16 @@ namespace LineConstruction.DAL.Migrations
                         {
                             Id = "be10629f-0508-451a-8fv1-0e905705e1f5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9e8ead6f-46ee-488c-aab0-22d2234e44ae",
+                            ConcurrencyStamp = "7908c741-39d1-45e4-91db-79c7d8bbf4d1",
                             Email = "Hr12@lineconstruction.com",
                             EmailConfirmed = true,
                             FirstName = "Huseyn",
                             LastName = "Hesenov",
                             LockoutEnabled = false,
                             NormalizedUserName = "HR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBjPe6F97oiccYEoNlT/71DbVM+a/D05s24wUdip7OmWH0vTwYPuZAuPFJMJ640MMA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEN6R+wuNU54Du2Ev9hrcxjI5ECyh8Emizgs3U8imYvso8HmN8bh1y8GfkDQEpX1xnQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "34e9d5cb-a837-4d26-841e-7aed68b3dd84",
+                            SecurityStamp = "d18e6586-af94-45c1-9fa9-5d0a9e94c460",
                             TwoFactorEnabled = false,
                             UserName = "HR"
                         });
@@ -297,6 +297,18 @@ namespace LineConstruction.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Foundations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ArmaturePrice = 150m,
+                            ConcretePrice = 200m,
+                            ConcretePriceEmployer = 180m,
+                            DrillingPriceEmployer = 100m,
+                            KhamitPrice = 50m,
+                            KhamitPriceEmployer = 60m
+                        });
                 });
 
             modelBuilder.Entity("LineConstruction.Core.Entities.Masonry", b =>
@@ -322,6 +334,16 @@ namespace LineConstruction.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Masonries");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CementPrice = 50m,
+                            SandPrice = 40m,
+                            StonePrice = 80m,
+                            WorkerSalary = 200m
+                        });
                 });
 
             modelBuilder.Entity("LineConstruction.Core.Entities.Order", b =>
@@ -548,6 +570,15 @@ namespace LineConstruction.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Plasters");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CementPrice = 70m,
+                            SandPrice = 50m,
+                            WorkerSalaryForArea = 120m
+                        });
                 });
 
             modelBuilder.Entity("LineConstruction.Core.Entities.Product", b =>
@@ -636,6 +667,17 @@ namespace LineConstruction.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roofs");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            NailPrice = 30m,
+                            ReykaPrice = 90m,
+                            RoofingPrice = 180m,
+                            WoodPrice = 120m,
+                            WorkerSalaryForArea = 150m
+                        });
                 });
 
             modelBuilder.Entity("LineConstruction.Core.Entities.Vacancy", b =>

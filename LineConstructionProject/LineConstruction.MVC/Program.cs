@@ -31,8 +31,8 @@ if (chatId == null || botToken == null)
 builder.Services.AddSingleton(new TelegramLogService(chatId, botToken, new HttpClient()));
 var app = builder.Build();
 app.UseStaticFiles();
-app.UseExceptionHandler("/Home/ErrorPage");
-app.UseStatusCodePagesWithRedirects("/Home/ErrorPage?code={0}");
+//app.UseExceptionHandler("/Home/ErrorPage");
+//app.UseStatusCodePagesWithRedirects("/Home/ErrorPage?code={0}");
 app.UseAuthentication();
 app.UseAuthorization();
 StripeConfiguration.ApiKey = builder.Configuration["Stripe:Secretkey"];
